@@ -1,0 +1,26 @@
+Circuit: * C:\projects\Death-Clock\clock_pcb\sim\buzzer.asc
+
+Limiting rise time of source v3 to 0.02
+Limiting fall time of source v3 to 0.02
+WARNING: Less than two connections to node n002.  This node is used by v1.
+Instance "m:m1:2": Length shorter than recommended for a level 3 MOSFET.
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Apr 14 16:53:39 2023
+Total elapsed time: 0.052 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2926
+traniter = 2920
+tranpoints = 1388
+accept = 1281
+rejected = 107
+matrix size = 12
+fillins = 0
+solver = Normal
+Avg thread counts: 1.2/1.5/1.5/1.2
+Matrix Compiler1: 552 bytes object code size  0.3/0.3/[0.2]
+Matrix Compiler2: off  [0.2]/0.3/0.2
+
