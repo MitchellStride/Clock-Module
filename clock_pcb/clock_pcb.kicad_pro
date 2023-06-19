@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 2.7,
+          "height": 2.7,
+          "width": 2.7
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.22499999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -434,19 +434,19 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.1397,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.127,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 0.127,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -468,10 +468,10 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.127,
+        "clearance": 0.0,
         "diff_pair_gap": 0.1397,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2286,
+        "diff_pair_width": 0.127,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -785,6 +785,10 @@
       {
         "netclass": "signal",
         "pattern": "Net-(R7-Pad2)"
+      },
+      {
+        "netclass": "signal",
+        "pattern": "/RP2040 & USB/USB_D+"
       }
     ]
   },
@@ -810,10 +814,15 @@
         {
           "name": "desc",
           "url": false,
-          "visible": true
+          "visible": false
         },
         {
           "name": "lcsc",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "digi",
           "url": false,
           "visible": false
         },
@@ -848,8 +857,8 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "C:\\Users\\mitch\\projects\\kicad_lib\\sheet_template.kicad_wks",
-    "plot_directory": "",
+    "page_layout_descr_file": "",
+    "plot_directory": "./",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -865,12 +874,12 @@
       ""
     ],
     [
-      "e5f4b62e-4ea8-4014-b845-4f36ee3853d9",
-      "PAGE2"
+      "01b97287-a5a1-43d9-b0d4-094409706162",
+      "RP2040 & USB"
     ],
     [
-      "f40a42f5-65fe-434e-9c82-55cea7abd9dd",
-      "PAGE3"
+      "05d988ef-d5db-40c4-a11a-450249f6a23d",
+      "CONNS & PERIPHERALS"
     ]
   ],
   "text_variables": {}

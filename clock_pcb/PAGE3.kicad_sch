@@ -1526,12 +1526,95 @@
         )
       )
     )
+    (symbol "stride_symbols:Buzzer_CMT-8504-100-SMT-TR" (pin_names (offset 0.0254) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "BZ1" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "CMT-8504-100-SMT-TR" (at 0 -4.445 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "Buzzer_Beeper:MagneticBuzzer_CUI_CMT-8504-100-SMT" (at 0.635 2.54 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0.635 2.54 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "desc" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "lcsc" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "bom" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "digi" "102-CMT-8504-100-SMT-CT-ND" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "quartz resonator ceramic" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Buzzer, polarized" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "*Buzzer*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Buzzer_CMT-8504-100-SMT-TR_0_1"
+        (arc (start 0 -3.175) (mid 3.1612 0) (end 0 3.175)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.651 1.905)
+            (xy -1.143 1.905)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.397 2.159)
+            (xy -1.397 1.651)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 3.175)
+            (xy 0 -3.175)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "Buzzer_CMT-8504-100-SMT-TR_1_1"
+        (pin passive line (at -2.54 2.54 0) (length 2.54)
+          (name "-" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -2.54 -2.54 0) (length 2.54)
+          (name "+" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -2.54 -2.54 0) (length 2.54) hide
+          (name "DUMMY1" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -2.54 -2.54 0) (length 2.54) hide
+          (name "DUMMY2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
   )
 
   (junction (at 242.57 97.79) (diameter 0) (color 0 0 0 0)
     (uuid 04f07248-d5c6-4cb5-b72d-43aad22e0d8b)
   )
-  (junction (at 140.589 173.736) (diameter 0) (color 0 0 0 0)
+  (junction (at 139.7 170.18) (diameter 0) (color 0 0 0 0)
     (uuid 11e80b27-0645-4857-a4fd-1b5043fefcee)
   )
   (junction (at 242.57 92.71) (diameter 0) (color 0 0 0 0)
@@ -1564,9 +1647,6 @@
   (junction (at 242.57 57.15) (diameter 0) (color 0 0 0 0)
     (uuid 792964d9-b174-4526-b735-8a941a977721)
   )
-  (junction (at 160.147 175.387) (diameter 0) (color 0 0 0 0)
-    (uuid 79e937cb-f9eb-4d85-b7a4-f3e043314991)
-  )
   (junction (at 235.585 46.99) (diameter 0) (color 0 0 0 0)
     (uuid 7bea7f50-33c9-471f-9bd6-d5f103ab6653)
   )
@@ -1590,9 +1670,6 @@
   )
   (junction (at 185.42 95.25) (diameter 0) (color 0 0 0 0)
     (uuid b25ff7d3-b43b-430a-bb29-2e4420d3b637)
-  )
-  (junction (at 153.289 167.767) (diameter 0) (color 0 0 0 0)
-    (uuid b35f71dc-8c20-4d16-b1af-54b1bd34d5ff)
   )
   (junction (at 242.57 49.53) (diameter 0) (color 0 0 0 0)
     (uuid c48d1ec7-64da-4533-9dd1-3a200b6f2c8d)
@@ -1618,6 +1695,9 @@
   (junction (at 242.57 64.77) (diameter 0) (color 0 0 0 0)
     (uuid d681effc-d235-4971-886f-a10454adefc7)
   )
+  (junction (at 139.7 175.26) (diameter 0) (color 0 0 0 0)
+    (uuid d9354639-61d7-4f3a-9c8a-2d300978d19e)
+  )
   (junction (at 143.51 41.91) (diameter 0) (color 0 0 0 0)
     (uuid dd99a47d-bffc-4b74-bf24-1f8c842e66b8)
   )
@@ -1633,7 +1713,7 @@
 
   (no_connect (at 265.43 41.91) (uuid 5717146d-2966-4d1c-9a2e-6d3427ba2448))
 
-  (wire (pts (xy 140.589 173.736) (xy 119.253 173.736))
+  (wire (pts (xy 139.7 170.18) (xy 118.745 170.18))
     (stroke (width 0) (type default))
     (uuid 0123314c-d56b-47a4-9119-c65187f1ad3e)
   )
@@ -1697,7 +1777,7 @@
     (stroke (width 0) (type default))
     (uuid 10578900-cb4d-40f8-b880-9efcdf18b0f6)
   )
-  (wire (pts (xy 140.589 170.18) (xy 140.589 173.736))
+  (wire (pts (xy 139.7 166.37) (xy 139.7 170.18))
     (stroke (width 0) (type default))
     (uuid 10d8b522-233c-4df3-8f5b-84215da4a563)
   )
@@ -1721,11 +1801,7 @@
     (stroke (width 0) (type default))
     (uuid 181cefa6-073a-48d5-94e5-8e2a30469eb7)
   )
-  (wire (pts (xy 120.777 165.862) (xy 120.777 171.196))
-    (stroke (width 0) (type default))
-    (uuid 188ab052-d594-423d-8f39-d95e5c026995)
-  )
-  (wire (pts (xy 140.589 173.736) (xy 145.923 173.736))
+  (wire (pts (xy 139.7 170.18) (xy 147.066 170.18))
     (stroke (width 0) (type default))
     (uuid 189cf052-5c40-4326-ac0d-687150e652e1)
   )
@@ -1793,13 +1869,9 @@
     (stroke (width 0) (type default))
     (uuid 310e75dd-f4b9-42c1-a9ca-a7d8fee097f1)
   )
-  (wire (pts (xy 140.589 189.484) (xy 140.589 190.754))
+  (wire (pts (xy 139.7 187.325) (xy 139.7 188.595))
     (stroke (width 0) (type default))
     (uuid 337605e3-fdd7-4632-a1c9-d8f44f62fea8)
-  )
-  (wire (pts (xy 140.589 162.56) (xy 140.589 165.1))
-    (stroke (width 0) (type solid))
-    (uuid 33c8b5fd-9086-423a-a9c4-16ec41c4f29b)
   )
   (wire (pts (xy 27.94 48.895) (xy 52.705 48.895))
     (stroke (width 0) (type default))
@@ -1873,10 +1945,6 @@
     (stroke (width 0) (type default))
     (uuid 46691411-36cd-4976-a468-2f09f60cafaa)
   )
-  (wire (pts (xy 160.147 174.752) (xy 160.147 175.387))
-    (stroke (width 0) (type default))
-    (uuid 472c4fdc-6739-40b3-9e78-dc56d3d127c4)
-  )
   (wire (pts (xy 252.095 148.59) (xy 259.08 148.59))
     (stroke (width 0) (type default))
     (uuid 48764171-6dd4-476c-916a-46a2ea0e8405)
@@ -1884,6 +1952,10 @@
   (wire (pts (xy 252.095 155.575) (xy 252.095 156.21))
     (stroke (width 0) (type default))
     (uuid 49959bf7-2a9f-45ff-8f16-5d26f224d9ab)
+  )
+  (wire (pts (xy 147.066 170.18) (xy 147.066 166.624))
+    (stroke (width 0) (type default))
+    (uuid 4b22d8ce-7124-4737-a0e8-b4583d3a4d49)
   )
   (wire (pts (xy 235.585 46.99) (xy 228.6 46.99))
     (stroke (width 0) (type default))
@@ -1901,6 +1973,10 @@
     (stroke (width 0) (type default))
     (uuid 5096a583-f910-49de-9844-d609c3691ee7)
   )
+  (wire (pts (xy 139.7 161.29) (xy 139.7 160.02))
+    (stroke (width 0) (type solid))
+    (uuid 5099a43c-da60-469d-9afd-f9a2d0d9356c)
+  )
   (wire (pts (xy 242.57 85.09) (xy 242.57 87.63))
     (stroke (width 0) (type default))
     (uuid 511343e1-77bd-4b2b-9043-5fd73a7496f1)
@@ -1912,10 +1988,6 @@
   (wire (pts (xy 228.6 73.025) (xy 228.6 76.835))
     (stroke (width 0) (type default))
     (uuid 51e5351d-042c-48b8-a7d9-0525260f6d0f)
-  )
-  (wire (pts (xy 153.289 175.387) (xy 153.289 174.879))
-    (stroke (width 0) (type default))
-    (uuid 565b2aef-1209-433a-9044-61968f43161d)
   )
   (wire (pts (xy 250.19 148.59) (xy 252.095 148.59))
     (stroke (width 0) (type default))
@@ -1957,6 +2029,10 @@
     (stroke (width 0) (type default))
     (uuid 61915b3a-f2cd-49da-8ce3-6e79868fdcb5)
   )
+  (wire (pts (xy 151.384 166.624) (xy 151.384 167.386))
+    (stroke (width 0) (type default))
+    (uuid 62c9a4c9-6f5a-4ad5-9919-1181672f2b36)
+  )
   (wire (pts (xy 250.19 143.51) (xy 252.095 143.51))
     (stroke (width 0) (type default))
     (uuid 63b4f667-9913-4e13-aa03-39e431472a92)
@@ -1977,7 +2053,7 @@
     (stroke (width 0) (type default))
     (uuid 69309e73-00d6-433b-9ef1-52d936fd252a)
   )
-  (wire (pts (xy 149.479 184.404) (xy 148.209 184.404))
+  (wire (pts (xy 149.225 182.245) (xy 147.32 182.245))
     (stroke (width 0) (type default))
     (uuid 6b92fdc9-3c97-4690-b4b7-6fb7e2a36d25)
   )
@@ -2013,6 +2089,10 @@
     (stroke (width 0) (type default))
     (uuid 7f1db4f6-e6b6-482d-b5a9-5316f36d2477)
   )
+  (wire (pts (xy 151.384 173.101) (xy 151.384 172.466))
+    (stroke (width 0) (type default))
+    (uuid 7f9077df-1145-457e-b35d-a5191eba08e6)
+  )
   (wire (pts (xy 169.037 129.921) (xy 169.037 127.381))
     (stroke (width 0) (type default))
     (uuid 807c2b47-5244-47b8-9b16-06210ae14533)
@@ -2020,14 +2100,6 @@
   (wire (pts (xy 241.3 39.37) (xy 265.43 39.37))
     (stroke (width 0) (type default))
     (uuid 83861f0f-22ad-4018-bd98-c0a9d7034cf2)
-  )
-  (wire (pts (xy 145.923 167.767) (xy 153.289 167.767))
-    (stroke (width 0) (type default))
-    (uuid 84f95732-5ddf-4ec0-a16f-03ddeb689780)
-  )
-  (wire (pts (xy 124.587 165.862) (xy 120.777 165.862))
-    (stroke (width 0) (type default))
-    (uuid 853b54b2-028e-4434-8afa-a3f6356b0323)
   )
   (wire (pts (xy 175.895 51.435) (xy 175.895 52.705))
     (stroke (width 0) (type default))
@@ -2069,9 +2141,13 @@
     (stroke (width 0) (type default))
     (uuid 8fd8f0a5-da3a-40ec-a75b-190f5ea7ed8c)
   )
-  (wire (pts (xy 157.099 184.404) (xy 154.559 184.404))
+  (wire (pts (xy 156.845 182.245) (xy 154.305 182.245))
     (stroke (width 0) (type default))
     (uuid 918e204d-a607-4be5-936e-af9bbcfda774)
+  )
+  (wire (pts (xy 118.745 175.26) (xy 139.7 175.26))
+    (stroke (width 0) (type default))
+    (uuid 9222c2ff-7964-4e7d-ae29-5da3eff6428b)
   )
   (wire (pts (xy 41.402 124.206) (xy 41.402 121.666))
     (stroke (width 0) (type default))
@@ -2080,6 +2156,10 @@
   (wire (pts (xy 28.194 121.666) (xy 30.226 121.666))
     (stroke (width 0) (type default))
     (uuid 9269596c-4aad-4c6c-aa46-0aa8043c6686)
+  )
+  (wire (pts (xy 139.7 175.26) (xy 139.7 177.165))
+    (stroke (width 0) (type default))
+    (uuid 92bef0c9-c9c2-40d9-ae0c-a326428baaf2)
   )
   (wire (pts (xy 252.095 156.21) (xy 252.095 156.845))
     (stroke (width 0) (type default))
@@ -2097,10 +2177,6 @@
     (stroke (width 0) (type default))
     (uuid 98539e54-a97c-4630-8ca9-5fa17174162c)
   )
-  (wire (pts (xy 153.289 167.767) (xy 153.289 169.799))
-    (stroke (width 0) (type default))
-    (uuid 986ee723-97be-4092-8802-06992e420706)
-  )
   (wire (pts (xy 134.62 92.71) (xy 144.145 92.71))
     (stroke (width 0) (type default))
     (uuid 98cd24d4-8a22-4eaf-a0ef-07cbbe8ea69a)
@@ -2117,10 +2193,6 @@
     (stroke (width 0) (type default))
     (uuid 9f2f27b0-1638-4941-ba28-2a9aede47ec4)
   )
-  (wire (pts (xy 140.589 176.276) (xy 119.253 176.276))
-    (stroke (width 0) (type default))
-    (uuid a2bda24e-9a4f-406f-8df6-377bf492dc57)
-  )
   (wire (pts (xy 264.16 144.145) (xy 264.16 146.05))
     (stroke (width 0) (type default))
     (uuid a983cc8f-002d-4fa7-a8ba-308b1d40ad52)
@@ -2132,10 +2204,6 @@
   (wire (pts (xy 27.94 97.155) (xy 32.385 97.155))
     (stroke (width 0) (type default))
     (uuid a9ad365d-273c-4cb5-a5b3-d406b4777855)
-  )
-  (wire (pts (xy 140.589 179.324) (xy 140.589 176.276))
-    (stroke (width 0) (type default))
-    (uuid aa507fac-6f27-4245-9d82-82c8bf96956f)
   )
   (wire (pts (xy 144.272 140.081) (xy 144.272 141.351))
     (stroke (width 0) (type solid))
@@ -2172,10 +2240,6 @@
   (wire (pts (xy 265.43 44.45) (xy 242.57 44.45))
     (stroke (width 0) (type default))
     (uuid b278e0f5-5480-483f-8ed2-f6dff1dfec71)
-  )
-  (wire (pts (xy 153.289 167.767) (xy 160.147 167.767))
-    (stroke (width 0) (type default))
-    (uuid b2a93322-990c-43dd-b220-dfbcd6bfa580)
   )
   (wire (pts (xy 259.08 148.59) (xy 264.16 148.59))
     (stroke (width 0) (type default))
@@ -2220,10 +2284,6 @@
   (wire (pts (xy 177.292 137.541) (xy 174.117 137.541))
     (stroke (width 0) (type solid))
     (uuid bf35f437-e155-49d7-94b1-c2ecbbf782df)
-  )
-  (wire (pts (xy 124.587 166.624) (xy 124.587 165.862))
-    (stroke (width 0) (type default))
-    (uuid bf57b857-570c-4a56-bc98-ed2fef381618)
   )
   (wire (pts (xy 141.605 97.79) (xy 144.145 97.79))
     (stroke (width 0) (type default))
@@ -2285,10 +2345,6 @@
     (stroke (width 0) (type default))
     (uuid c8c2f409-c0f2-4015-9fac-cf4738dbd426)
   )
-  (wire (pts (xy 160.147 175.387) (xy 160.147 175.895))
-    (stroke (width 0) (type default))
-    (uuid c984ecb8-b66a-4db6-9342-c06fb753a2a3)
-  )
   (wire (pts (xy 250.19 146.05) (xy 253.365 146.05))
     (stroke (width 0) (type default))
     (uuid ca5ce01b-cd15-411d-83f5-11b2ffa24688)
@@ -2296,6 +2352,10 @@
   (wire (pts (xy 241.3 38.1) (xy 241.3 39.37))
     (stroke (width 0) (type default))
     (uuid ca637119-a63c-4a98-891f-5599db17d59d)
+  )
+  (wire (pts (xy 147.066 166.624) (xy 151.384 166.624))
+    (stroke (width 0) (type default))
+    (uuid caabbe4f-d030-481e-b804-84908b6bc854)
   )
   (wire (pts (xy 252.095 139.7) (xy 255.27 139.7))
     (stroke (width 0) (type default))
@@ -2333,10 +2393,6 @@
     (stroke (width 0) (type default))
     (uuid d4c98f14-7cb7-4c11-a481-e90291a3b27a)
   )
-  (wire (pts (xy 160.147 175.387) (xy 153.289 175.387))
-    (stroke (width 0) (type default))
-    (uuid d5815d72-2bcb-4f76-aa9f-77c9825b045d)
-  )
   (wire (pts (xy 143.51 50.8) (xy 143.51 52.07))
     (stroke (width 0) (type default))
     (uuid d69d193c-f91b-4a43-9739-64cc4275f566)
@@ -2361,10 +2417,6 @@
     (stroke (width 0) (type default))
     (uuid e3395d4e-3710-49c6-bdcc-f3f7bef8ab69)
   )
-  (wire (pts (xy 160.147 167.767) (xy 160.147 169.672))
-    (stroke (width 0) (type default))
-    (uuid e395c80a-17da-4192-ac96-29bc5289ba4a)
-  )
   (wire (pts (xy 27.94 59.055) (xy 46.99 59.055))
     (stroke (width 0) (type default))
     (uuid e7168d8c-aad7-4825-9249-3d0f93112830)
@@ -2380,10 +2432,6 @@
   (wire (pts (xy 177.292 127.381) (xy 177.292 128.651))
     (stroke (width 0) (type solid))
     (uuid e89bc55d-c35f-4ef2-8497-8c0cf0f8c180)
-  )
-  (wire (pts (xy 120.777 171.196) (xy 119.253 171.196))
-    (stroke (width 0) (type default))
-    (uuid e8bd9af7-8d80-4a9c-ad94-febd1d4d1a89)
   )
   (wire (pts (xy 27.94 64.135) (xy 46.99 64.135))
     (stroke (width 0) (type default))
@@ -2416,10 +2464,6 @@
   (wire (pts (xy 143.51 38.735) (xy 143.51 41.91))
     (stroke (width 0) (type default))
     (uuid f533cac0-110c-48a0-94bb-4000827cb9ce)
-  )
-  (wire (pts (xy 145.923 173.736) (xy 145.923 167.767))
-    (stroke (width 0) (type default))
-    (uuid f5549cc8-893e-4b05-8fd4-93346a60f9e4)
   )
   (wire (pts (xy 161.925 71.755) (xy 161.925 73.66))
     (stroke (width 0) (type default))
@@ -2474,7 +2518,7 @@
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom))
     (uuid 12e68533-4bc0-4f61-a7ca-8f8c18adb7e1)
   )
-  (text "BUZZER\n" (at 113.538 159.004 0)
+  (text "BUZZER\n" (at 113.284 156.845 0)
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom))
     (uuid 13b8633b-a441-4e93-b1ea-64ccd6f530aa)
   )
@@ -2546,10 +2590,6 @@
     (at 254.635 107.315 0)
     (effects (font (size 1 1)) (justify left bottom))
     (uuid 749d1ce1-6683-40e3-a78c-1740fa29d4fa)
-  )
-  (text "Piezo long pin usually (+)" (at 110.744 179.959 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 7d2ec726-03a4-4eab-894c-553470108030)
   )
   (text "D/C#" (at 272.415 62.865 0)
     (effects (font (size 1 1)) (justify left bottom))
@@ -2638,11 +2678,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 131c59d3-d33e-4109-80a0-ea9365a8a7e6)
   )
-  (label "BUZZER_LOW" (at 137.541 176.276 180) (fields_autoplaced)
+  (label "BUZZER_LOW" (at 137.033 175.26 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 2a81e8ab-14ba-4889-ad52-00a0d1155c48)
   )
-  (label "BUZZER_HIGH" (at 137.541 173.736 180) (fields_autoplaced)
+  (label "BUZZER_HIGH" (at 136.652 170.18 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 2d2cd50c-65f4-4225-a0b0-ce9b3921ad23)
   )
@@ -2694,10 +2734,10 @@
       (effects (font (size 1 1)) (justify left) hide)
     )
   )
-  (global_label "GPIO11" (shape input) (at 157.099 184.404 0) (fields_autoplaced)
+  (global_label "GPIO11" (shape input) (at 156.845 182.245 0) (fields_autoplaced)
     (effects (font (size 1 1)) (justify left))
     (uuid 32cefc0b-1bfa-44ee-8a4f-5d4d25863069)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 164.8155 184.404 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 164.5615 182.245 0)
       (effects (font (size 1 1)) (justify left) hide)
     )
   )
@@ -2838,7 +2878,7 @@
   (symbol (lib_id "power:+3V3") (at 32.385 43.815 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 008d243e-e8ca-4b8a-a5cd-cb5d1fd57ecd)
-    (property "Reference" "#PWR039" (at 28.575 43.815 0)
+    (property "Reference" "#PWR041" (at 28.575 43.815 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 38.1 43.815 90)
@@ -2853,8 +2893,8 @@
     (pin "1" (uuid 5a80a8cd-9f87-42ad-8972-9da916b1b07c))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR039") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -2863,7 +2903,7 @@
   (symbol (lib_id "power:+5V") (at 149.987 124.841 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 046f5eda-ffea-49e5-927b-d628b3667da0)
-    (property "Reference" "#PWR054" (at 149.987 128.651 0)
+    (property "Reference" "#PWR059" (at 149.987 128.651 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 149.987 121.2365 0)
@@ -2878,8 +2918,8 @@
     (pin "1" (uuid 2c08d853-9c26-4a19-b6c7-dc4c05ec0d4b))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR054") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR059") (unit 1)
         )
       )
     )
@@ -2888,7 +2928,7 @@
   (symbol (lib_id "power:GND") (at 46.99 79.375 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 07caa84d-5eb5-48b3-bf55-e84ce72759f9)
-    (property "Reference" "#PWR044" (at 53.34 79.375 0)
+    (property "Reference" "#PWR049" (at 53.34 79.375 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 52.07 79.375 90)
@@ -2903,8 +2943,8 @@
     (pin "1" (uuid ee49359b-41a3-4437-9b3f-c15736ce1b24))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR044") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -2913,7 +2953,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 175.895 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0b30c615-624c-4f90-b220-42ef4e8a0508)
-    (property "Reference" "R23" (at 178.435 35.56 0)
+    (property "Reference" "R25" (at 178.435 35.56 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 178.435 38.1 0)
@@ -2932,8 +2972,8 @@
     (pin "2" (uuid 1d4af741-0d9f-49ca-9ebf-4a718340bd72))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R23") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R25") (unit 1)
         )
       )
     )
@@ -2942,7 +2982,7 @@
   (symbol (lib_id "power:VBUS") (at 32.385 36.195 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0cba21e6-6d6c-4bc4-9d8b-d0fc0b5d7072)
-    (property "Reference" "#PWR036" (at 28.575 36.195 0)
+    (property "Reference" "#PWR038" (at 28.575 36.195 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 35.56 36.674 90)
@@ -2957,8 +2997,8 @@
     (pin "1" (uuid 131aac40-27f0-481d-b6e3-f83e3a2e0200))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR036") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -2967,7 +3007,7 @@
   (symbol (lib_id "power:GND") (at 144.272 141.351 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ce98891-cff8-4b76-9cde-1a50e7214ab2)
-    (property "Reference" "#PWR052" (at 144.272 147.701 0)
+    (property "Reference" "#PWR056" (at 144.272 147.701 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.272 145.161 0)
@@ -2982,8 +3022,8 @@
     (pin "1" (uuid cdb00466-d828-452e-8096-f0a607cf98ae))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR052") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -2992,7 +3032,7 @@
   (symbol (lib_id "power:+3V3") (at 241.3 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0d6f9200-4204-40ac-8738-4baba3337923)
-    (property "Reference" "#PWR068" (at 241.3 41.91 0)
+    (property "Reference" "#PWR076" (at 241.3 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 241.3 34.29 0)
@@ -3007,8 +3047,8 @@
     (pin "1" (uuid ab90a665-df65-40b7-ab37-96d46e3b6edb))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR068") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR076") (unit 1)
         )
       )
     )
@@ -3017,7 +3057,7 @@
   (symbol (lib_id "power:GND") (at 175.895 52.705 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 15053222-8df9-416b-a755-bd7974c33bbb)
-    (property "Reference" "#PWR060" (at 175.895 59.055 0)
+    (property "Reference" "#PWR068" (at 175.895 59.055 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 175.895 56.515 0)
@@ -3032,8 +3072,8 @@
     (pin "1" (uuid 014b45b6-1bdd-4719-94e8-aefbaabd5f39))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR060") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR068") (unit 1)
         )
       )
     )
@@ -3042,7 +3082,7 @@
   (symbol (lib_id "power:GND") (at 149.987 129.921 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 15bfc4e6-fbbb-4de4-865a-62549c3ffcad)
-    (property "Reference" "#PWR055" (at 149.987 136.271 0)
+    (property "Reference" "#PWR060" (at 149.987 136.271 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 152.527 131.826 0)
@@ -3057,8 +3097,8 @@
     (pin "1" (uuid 3d5f0ef4-2f15-4550-9775-93112d2636db))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR055") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -3067,7 +3107,7 @@
   (symbol (lib_id "power:GND") (at 242.57 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 18786a31-23b4-492c-a262-8dc3c288a4ee)
-    (property "Reference" "#PWR069" (at 242.57 109.22 0)
+    (property "Reference" "#PWR077" (at 242.57 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 242.57 106.68 0)
@@ -3082,8 +3122,8 @@
     (pin "1" (uuid a54d9e4f-a962-4811-ae15-0d0096e82252))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR069") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR077") (unit 1)
         )
       )
     )
@@ -3092,7 +3132,7 @@
   (symbol (lib_id "power:+3V3") (at 175.895 31.75 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1b8c931c-260d-4531-80eb-47c13eb94bc5)
-    (property "Reference" "#PWR059" (at 175.895 35.56 0)
+    (property "Reference" "#PWR067" (at 175.895 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 175.895 27.94 0)
@@ -3107,8 +3147,8 @@
     (pin "1" (uuid 28cda014-1a75-47aa-adf3-ec12d1953025))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR059") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -3117,7 +3157,7 @@
   (symbol (lib_name "Conn_01x02_1") (lib_id "Connector_Generic:Conn_01x02") (at 23.114 126.746 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1df874cb-98b8-4412-8c80-b5230196872a)
-    (property "Reference" "J7" (at 23.114 119.126 0)
+    (property "Reference" "J4" (at 23.114 119.126 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5V" (at 23.749 129.921 0)
@@ -3143,8 +3183,8 @@
     (pin "MP" (uuid 7644a2b7-7eed-4735-b23b-9922f174e99b))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "J7") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -3153,7 +3193,7 @@
   (symbol (lib_id "Device:C_Small") (at 175.895 48.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1e2b8bc6-509c-426d-9b49-dfd4a777287d)
-    (property "Reference" "C22" (at 176.657 47.117 0)
+    (property "Reference" "C23" (at 176.657 47.117 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 176.911 50.927 0)
@@ -3175,8 +3215,8 @@
     (pin "2" (uuid 124a66fb-7c58-476d-b689-5d5f09fd0449))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "C22") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "C23") (unit 1)
         )
       )
     )
@@ -3185,7 +3225,7 @@
   (symbol (lib_id "power:GND") (at 32.385 46.355 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2686233b-7633-4da6-8521-e085c6d46ab8)
-    (property "Reference" "#PWR040" (at 38.735 46.355 0)
+    (property "Reference" "#PWR042" (at 38.735 46.355 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 37.465 46.355 90)
@@ -3200,8 +3240,8 @@
     (pin "1" (uuid 5a87114d-b7b2-419f-b81a-7058e2fdaad0))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR040") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -3210,7 +3250,7 @@
   (symbol (lib_id "power:GND") (at 252.095 156.845 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 27596344-8213-4f60-b58c-5d51cc4f011a)
-    (property "Reference" "#PWR070" (at 252.095 163.195 0)
+    (property "Reference" "#PWR080" (at 252.095 163.195 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 254.635 158.75 0)
@@ -3225,8 +3265,8 @@
     (pin "1" (uuid d821d8c3-b6e3-4aec-b0b6-8cb5a59f4fd6))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR070") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR080") (unit 1)
         )
       )
     )
@@ -3235,7 +3275,7 @@
   (symbol (lib_id "power:GND") (at 147.32 81.915 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b73e30c-0413-40ff-b383-f32aac06b4ce)
-    (property "Reference" "#PWR049" (at 147.32 88.265 0)
+    (property "Reference" "#PWR058" (at 147.32 88.265 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 149.86 83.82 0)
@@ -3250,8 +3290,8 @@
     (pin "1" (uuid e5dbbd2a-3b2c-45d9-90a7-8a67fc6bd5e6))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR049") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -3286,7 +3326,7 @@
     (pin "MP" (uuid d41007bc-44c0-44cd-8ffc-723514139cc9))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "J5") (unit 1)
         )
       )
@@ -3296,7 +3336,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 167.64 42.545 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 35221a2d-210c-4b38-b2d0-20d89503366c)
-    (property "Reference" "R21" (at 170.18 41.275 90)
+    (property "Reference" "R24" (at 170.18 41.275 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 163.83 41.275 90)
@@ -3315,8 +3355,8 @@
     (pin "2" (uuid 31c279c1-3bbd-4c4e-a40c-5e708aa94815))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R21") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R24") (unit 1)
         )
       )
     )
@@ -3325,7 +3365,7 @@
   (symbol (lib_id "power:GND") (at 255.27 140.335 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 36f93838-5561-4913-8e87-c1f75e0b7de1)
-    (property "Reference" "#PWR077" (at 255.27 146.685 0)
+    (property "Reference" "#PWR081" (at 255.27 146.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 257.81 142.24 0)
@@ -3340,8 +3380,8 @@
     (pin "1" (uuid 7bbd1e73-6803-40de-b3d8-3bbc9ec7ec6f))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR077") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR081") (unit 1)
         )
       )
     )
@@ -3350,7 +3390,7 @@
   (symbol (lib_id "Device:C_Small") (at 250.19 92.71 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3b76d5bf-85aa-4689-ac06-3ab13955a37e)
-    (property "Reference" "C27" (at 245.745 91.44 90)
+    (property "Reference" "C28" (at 245.745 91.44 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.2u" (at 253.365 91.44 90)
@@ -3372,43 +3412,43 @@
     (pin "2" (uuid bcdf5ef2-cdbd-4598-b39e-d40240ddd2d9))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "C27") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "C28") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:R_Small_US") (at 140.589 167.64 0) (mirror y) (unit 1)
+  (symbol (lib_id "Device:R_Small_US") (at 139.7 163.83 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 40df3b0b-4f9b-4ed6-866f-cb3a35df7afd)
-    (property "Reference" "R32" (at 138.049 166.37 0)
+    (property "Reference" "R19" (at 137.16 162.56 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "120" (at 138.049 168.91 0)
+    (property "Value" "120" (at 137.16 165.1 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 140.589 167.64 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 139.7 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 140.589 167.64 0)
+    (property "Datasheet" "~" (at 139.7 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "lcsc" "C25079" (at 140.589 167.64 90)
+    (property "lcsc" "C25079" (at 139.7 163.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "desc" "" (at 140.589 167.64 0)
+    (property "desc" "" (at 139.7 163.83 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "bom" "" (at 140.589 167.64 0)
+    (property "bom" "" (at 139.7 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 419d5858-988f-4f0d-b66d-f03b845f38dd))
     (pin "2" (uuid 04080ccd-0da8-4330-bb90-bd6477167f91))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R32") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -3417,7 +3457,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 177.292 131.191 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 41b1cb06-2272-4c39-9c62-05c3058d7c98)
-    (property "Reference" "R25" (at 181.102 129.286 0)
+    (property "Reference" "R26" (at 181.102 129.286 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 181.102 131.191 0)
@@ -3439,8 +3479,8 @@
     (pin "2" (uuid ad94137b-833b-47d3-a9c4-fcf0065a0a32))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R25") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R26") (unit 1)
         )
       )
     )
@@ -3449,7 +3489,7 @@
   (symbol (lib_id "power:GND") (at 32.385 38.735 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 459f48b5-df2b-463f-871f-d6b1dfaf75d2)
-    (property "Reference" "#PWR037" (at 38.735 38.735 0)
+    (property "Reference" "#PWR039" (at 38.735 38.735 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 37.465 38.735 90)
@@ -3464,8 +3504,8 @@
     (pin "1" (uuid d5bbb949-a063-4dc5-b43b-98038f609764))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR037") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -3474,7 +3514,7 @@
   (symbol (lib_id "power:GND") (at 250.19 118.11 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d4ac380-858e-48fb-95dd-727215786e43)
-    (property "Reference" "#PWR078" (at 250.19 124.46 0)
+    (property "Reference" "#PWR079" (at 250.19 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 252.73 120.015 0)
@@ -3489,8 +3529,8 @@
     (pin "1" (uuid 78d78145-6b2e-425e-9986-1cc85bce0d6f))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR078") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR079") (unit 1)
         )
       )
     )
@@ -3499,7 +3539,7 @@
   (symbol (lib_id "power:+3V3") (at 235.585 148.59 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 50764ada-e1bb-457c-8ff4-49a1de7001b3)
-    (property "Reference" "#PWR066" (at 235.585 152.4 0)
+    (property "Reference" "#PWR074" (at 235.585 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 234.95 144.78 0)
@@ -3514,8 +3554,8 @@
     (pin "1" (uuid ca5de2fb-0a61-490f-844f-87886f2bfcbb))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR066") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR074") (unit 1)
         )
       )
     )
@@ -3524,7 +3564,7 @@
   (symbol (lib_id "power:+5V") (at 32.385 41.275 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 52458195-bb72-4a8f-8eac-1dd06611f313)
-    (property "Reference" "#PWR038" (at 28.575 41.275 0)
+    (property "Reference" "#PWR040" (at 28.575 41.275 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 35.56 41.754 90)
@@ -3539,8 +3579,8 @@
     (pin "1" (uuid 5fce0639-58cc-4fff-aa22-d5d3c498b2c7))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR038") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -3549,7 +3589,7 @@
   (symbol (lib_id "power:GND") (at 46.99 66.675 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 549eaa20-9c9f-4748-bc54-73653c0465ba)
-    (property "Reference" "#PWR043" (at 53.34 66.675 0)
+    (property "Reference" "#PWR048" (at 53.34 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 52.07 66.675 90)
@@ -3564,8 +3604,8 @@
     (pin "1" (uuid f510f174-4460-41a8-b420-45bad26867f3))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR043") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -3574,7 +3614,7 @@
   (symbol (lib_id "Device:C_Small") (at 251.46 29.21 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5673641d-4afe-41da-b2ff-dd3b817ee60b)
-    (property "Reference" "C28" (at 247.65 27.94 90)
+    (property "Reference" "C29" (at 247.65 27.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 254 27.94 90)
@@ -3596,8 +3636,8 @@
     (pin "2" (uuid 45a9fab2-35f5-4a1e-8cc9-d7b8b0fcf672))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "C28") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "C29") (unit 1)
         )
       )
     )
@@ -3631,7 +3671,7 @@
     (pin "8" (uuid 6085b4e1-1f8b-48ec-acdb-fd85553e42d8))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "U5") (unit 1)
         )
       )
@@ -3663,7 +3703,7 @@
     (pin "2" (uuid 219aab39-3661-4cbb-9f1e-ed4242618393))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "C19") (unit 1)
         )
       )
@@ -3679,7 +3719,7 @@
     (property "Value" "WS2812B-2020" (at 134.112 143.891 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "ftp:WS2812B-2020" (at 134.112 145.161 0)
+    (property "Footprint" "stride_footprints:WS2812B-2020" (at 134.112 145.161 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.tme.eu/Document/4a8239e52df5e0b5cc2eb96834c5d8b6/WS2812B-2020.pdf" (at 132.842 147.066 0)
@@ -3691,13 +3731,19 @@
     (property "lcsc" "C965555" (at 135.382 137.541 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "desc" "" (at 135.382 137.541 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "bom" "" (at 135.382 137.541 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid aaf51a72-92bb-4d27-90c1-1e9ed9635c3f))
     (pin "2" (uuid d2939dd8-3430-4504-81e2-306111561500))
     (pin "3" (uuid 75b11212-fabf-4d63-b491-4ad13f93f072))
     (pin "4" (uuid 8362eb47-15bc-4cf4-b51f-a82d56ca1527))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "D5") (unit 1)
         )
       )
@@ -3707,7 +3753,7 @@
   (symbol (lib_id "Device:C_Small") (at 228.6 51.435 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5f5a0b84-2196-4680-9823-38b4eb90333c)
-    (property "Reference" "C23" (at 229.87 49.53 0)
+    (property "Reference" "C24" (at 229.87 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 230.505 53.975 0)
@@ -3729,8 +3775,8 @@
     (pin "2" (uuid b82b86c1-09f6-4c17-b2c9-9ad5f716bbd6))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "C23") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "C24") (unit 1)
         )
       )
     )
@@ -3761,7 +3807,7 @@
     (pin "2" (uuid bd6f7006-b89a-471a-bf5a-dd05c3fbc31d))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "C20") (unit 1)
         )
       )
@@ -3771,7 +3817,7 @@
   (symbol (lib_id "power:GND") (at 228.6 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 654b52f9-e989-4c6b-bea2-391499a7c0ed)
-    (property "Reference" "#PWR065" (at 228.6 92.71 0)
+    (property "Reference" "#PWR073" (at 228.6 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 228.6 90.17 0)
@@ -3786,58 +3832,98 @@
     (pin "1" (uuid 4d063abe-c3d8-4e08-a9b3-c4e64bc747c5))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR065") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR073") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 140.589 162.56 0) (mirror y) (unit 1)
+  (symbol (lib_id "power:+5V") (at 139.7 160.02 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 68a9aac0-8390-4b13-9716-3c688687f300)
-    (property "Reference" "#PWR082" (at 140.589 166.37 0)
+    (property "Reference" "#PWR051" (at 139.7 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 140.589 158.9555 0)
+    (property "Value" "+5V" (at 139.7 156.4155 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 140.589 162.56 0)
+    (property "Footprint" "" (at 139.7 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 140.589 162.56 0)
+    (property "Datasheet" "" (at 139.7 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7b152883-29e0-41db-9d33-f269f3a752e0))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR082") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR051") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 140.589 190.754 0) (unit 1)
+  (symbol (lib_id "stride_symbols:Buzzer_CMT-8504-100-SMT-TR") (at 116.205 172.72 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6e5b106b-586b-459b-8cc0-5645e7fb0587)
-    (property "Reference" "#PWR084" (at 140.589 197.104 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 140.589 194.564 0)
+    (uuid 6a475ceb-131c-43ad-9ace-eb9beb21d47e)
+    (property "Reference" "BZ1" (at 116.205 167.64 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 140.589 190.754 0)
+    (property "Value" "CMT-8504-100-SMT-TR" (at 116.205 177.165 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Buzzer_Beeper:MagneticBuzzer_CUI_CMT-8504-100-SMT" (at 115.57 170.18 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 140.589 190.754 0)
+    (property "Datasheet" "~" (at 115.57 170.18 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "desc" "BUZZER MAGNETIC 5V 8.5X8.5MM SMD" (at 116.205 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "lcsc" "" (at 116.205 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "bom" "" (at 116.205 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "digi" "102-CMT-8504-100-SMT-CT-ND" (at 116.205 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ea741d22-9e75-4666-be55-7039df0be22e))
+    (pin "2" (uuid aa1d09df-d936-4ef0-9ae5-1a1c451d652c))
+    (pin "3" (uuid eb9f099d-e42d-45f8-9c14-7c932c7d0b0f))
+    (pin "4" (uuid 43218284-e196-46a3-b0ff-af41cf5d1a74))
+    (instances
+      (project "clock_pcb"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "BZ1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 139.7 188.595 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 6e5b106b-586b-459b-8cc0-5645e7fb0587)
+    (property "Reference" "#PWR052" (at 139.7 194.945 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 139.7 192.405 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 139.7 188.595 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 139.7 188.595 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2e02811b-ad78-41c1-a074-c8cce31543d0))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR084") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR052") (unit 1)
         )
       )
     )
@@ -3846,7 +3932,7 @@
   (symbol (lib_id "power:+3V3") (at 228.6 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6e77db57-ddc0-482a-aabb-2e4000b3c989)
-    (property "Reference" "#PWR063" (at 228.6 48.26 0)
+    (property "Reference" "#PWR071" (at 228.6 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 228.6 40.64 0)
@@ -3861,8 +3947,8 @@
     (pin "1" (uuid 23dba26b-6591-40cf-a994-da9458f5af3d))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR063") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -3877,7 +3963,7 @@
     (property "Value" "CR2032" (at 164.846 78.5746 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "ftp:Q&J_CR2032-BS-6-1" (at 161.925 77.216 90)
+    (property "Footprint" "stride_footprints:Q&J_CR2032-BS-6-1" (at 161.925 77.216 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 161.925 77.216 90)
@@ -3889,11 +3975,14 @@
     (property "lcsc" "C70377" (at 161.925 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "bom" "" (at 161.925 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 69f03ed6-54e9-41d3-9f67-cefae48c11f7))
     (pin "2" (uuid 227f7266-48e8-4231-b170-1956d3bf3c11))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "BT1") (unit 1)
         )
       )
@@ -3903,7 +3992,7 @@
   (symbol (lib_id "power:GND") (at 246.38 127.635 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6ece120c-2bfe-4aa2-aaf2-a97740c985aa)
-    (property "Reference" "#PWR071" (at 246.38 133.985 0)
+    (property "Reference" "#PWR078" (at 246.38 133.985 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 246.38 131.445 0)
@@ -3918,8 +4007,8 @@
     (pin "1" (uuid ecfe7f25-68f2-4210-b645-e1289d5d2506))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR071") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR078") (unit 1)
         )
       )
     )
@@ -3928,7 +4017,7 @@
   (symbol (lib_id "Device:C_Small") (at 235.585 151.13 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6fe29ae0-1dec-4d10-9923-6b6dd4d137a7)
-    (property "Reference" "C25" (at 240.03 149.225 0)
+    (property "Reference" "C27" (at 240.03 149.225 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 238.76 153.035 0)
@@ -3950,8 +4039,8 @@
     (pin "2" (uuid 8147e62c-899d-41ba-b786-490c68f322e0))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "C25") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "C27") (unit 1)
         )
       )
     )
@@ -3982,7 +4071,7 @@
     (pin "2" (uuid 9dbea787-e661-443a-96a6-dddde706726b))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "SW5") (unit 1)
         )
       )
@@ -3992,7 +4081,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 160.782 131.191 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7df463b3-be4f-462b-9411-b2a2a3798dfd)
-    (property "Reference" "R22" (at 163.322 129.921 0)
+    (property "Reference" "R23" (at 163.322 129.921 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 163.322 132.461 0)
@@ -4011,8 +4100,8 @@
     (pin "2" (uuid abb8f615-d2e4-4ec9-b75a-cc73d5893584))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R22") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -4021,7 +4110,7 @@
   (symbol (lib_id "Device:C_Small") (at 259.08 153.035 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8276370e-254b-425c-966b-252e9335e395)
-    (property "Reference" "C30" (at 259.842 151.257 0)
+    (property "Reference" "C32" (at 259.842 151.257 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 260.096 155.067 0)
@@ -4043,8 +4132,8 @@
     (pin "2" (uuid e09cbe67-5132-4807-929e-c3c447a7355a))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "C30") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "C32") (unit 1)
         )
       )
     )
@@ -4053,7 +4142,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 143.51 36.195 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 834c8652-08d6-41d5-875a-d0f374565119)
-    (property "Reference" "R19" (at 146.05 34.925 0)
+    (property "Reference" "R20" (at 146.05 34.925 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 146.05 37.465 0)
@@ -4072,8 +4161,8 @@
     (pin "2" (uuid 10075d77-cb7e-4ea9-af16-15bc1bc72930))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R19") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -4082,7 +4171,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 185.42 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 83a014e2-49e1-443e-81cc-0aafc42dda34)
-    (property "Reference" "R24" (at 187.96 87.63 0)
+    (property "Reference" "R27" (at 187.96 87.63 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 187.96 90.17 0)
@@ -4101,8 +4190,8 @@
     (pin "2" (uuid 16526545-6807-488f-8355-fa314f36170a))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R24") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R27") (unit 1)
         )
       )
     )
@@ -4159,7 +4248,7 @@
     (pin "MP" (uuid c43731a0-c29b-4ef6-ab6b-a8ea23e899f6))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "J3") (unit 1)
         )
       )
@@ -4169,7 +4258,7 @@
   (symbol (lib_id "power:GND") (at 156.845 106.68 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8436aed7-dd4a-4301-a48d-2fa53e2e5616)
-    (property "Reference" "#PWR053" (at 156.845 113.03 0)
+    (property "Reference" "#PWR063" (at 156.845 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 156.845 110.49 0)
@@ -4184,8 +4273,8 @@
     (pin "1" (uuid b9a4435a-4ae2-4cef-bf59-bbddbd08afc4))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR053") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR063") (unit 1)
         )
       )
     )
@@ -4194,7 +4283,7 @@
   (symbol (lib_id "power:GND") (at 262.89 26.67 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 89521bce-e7d8-4139-a214-0a1d54974ff8)
-    (property "Reference" "#PWR073" (at 256.54 26.67 0)
+    (property "Reference" "#PWR082" (at 256.54 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 257.81 26.67 90)
@@ -4209,44 +4298,8 @@
     (pin "1" (uuid 0a6045eb-6674-4b55-9d7e-a61e7e186388))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR073") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_name "Conn_01x02_1") (lib_id "Connector_Generic:Conn_01x02") (at 114.173 176.276 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 898afa8d-2ac0-4d50-8ac6-e2f990f3eeb2)
-    (property "Reference" "J8" (at 114.173 168.656 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "5V" (at 114.808 179.451 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal" (at 114.173 176.276 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 114.173 176.276 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "desc" "SH 2pin 1mm" (at 114.173 176.276 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "lcsc" "C160402" (at 114.173 176.276 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "bom" "" (at 114.173 176.276 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8b090339-f93b-470b-8610-bb0dbfa5d47e))
-    (pin "2" (uuid 8b268ecd-c8e9-4e56-b6f8-c3b2f4eff518))
-    (pin "MP" (uuid db31536d-7a82-4a6a-a7bb-37a5c609c897))
-    (instances
-      (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "J8") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR082") (unit 1)
         )
       )
     )
@@ -4277,7 +4330,7 @@
     (pin "2" (uuid 2d74e591-65b4-4df9-a335-e556a5d3a8fa))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "SW4") (unit 1)
         )
       )
@@ -4287,7 +4340,7 @@
   (symbol (lib_id "power:+5V") (at 41.402 121.666 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8a2a7e2a-190b-4a45-bc82-28cd90393a7c)
-    (property "Reference" "#PWR022" (at 41.402 125.476 0)
+    (property "Reference" "#PWR047" (at 41.402 125.476 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 41.402 118.0615 0)
@@ -4302,11 +4355,8 @@
     (pin "1" (uuid c0e7d948-09fd-484b-8f92-0bc13a2ee082))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e5f4b62e-4ea8-4014-b845-4f36ee3853d9"
-          (reference "#PWR022") (unit 1)
-        )
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR075") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR047") (unit 1)
         )
       )
     )
@@ -4315,7 +4365,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 228.6 70.485 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8af514d4-f1ec-44f3-8e53-d1629a560a53)
-    (property "Reference" "R26" (at 231.14 69.215 0)
+    (property "Reference" "R28" (at 231.14 69.215 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 231.14 71.755 0)
@@ -4334,8 +4384,8 @@
     (pin "2" (uuid 0f8d5454-92ea-4f43-858c-8e72a65334e9))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R26") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R28") (unit 1)
         )
       )
     )
@@ -4344,7 +4394,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 252.095 153.035 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8db57466-7d0c-4bac-8be5-388106a63dec)
-    (property "Reference" "R27" (at 254.635 151.765 0)
+    (property "Reference" "R29" (at 254.635 151.765 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 254.635 154.305 0)
@@ -4363,8 +4413,8 @@
     (pin "2" (uuid abb59a4c-9b5e-46d1-a73e-2e6c6ce06b15))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R27") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R29") (unit 1)
         )
       )
     )
@@ -4373,7 +4423,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 151.892 137.541 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 931b412f-070c-4fe3-a5b4-72ea38565227)
-    (property "Reference" "R20" (at 154.432 136.271 90)
+    (property "Reference" "R22" (at 154.432 136.271 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "51" (at 148.082 136.271 90)
@@ -4392,8 +4442,8 @@
     (pin "2" (uuid 44b16070-39b9-4987-adee-738b36eb4e39))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R20") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -4402,7 +4452,7 @@
   (symbol (lib_id "power:GND") (at 161.925 82.55 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 950b3628-b027-4a0e-8f79-28a369797dc3)
-    (property "Reference" "#PWR056" (at 161.925 88.9 0)
+    (property "Reference" "#PWR065" (at 161.925 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 164.465 85.09 0)
@@ -4417,8 +4467,8 @@
     (pin "1" (uuid cacdd119-6382-4fac-b86f-e0824d35ac1f))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR056") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR065") (unit 1)
         )
       )
     )
@@ -4427,7 +4477,7 @@
   (symbol (lib_id "power:GND") (at 143.51 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9722b678-71a7-45f6-91f4-6d09fe660068)
-    (property "Reference" "#PWR047" (at 143.51 58.42 0)
+    (property "Reference" "#PWR054" (at 143.51 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 143.51 55.88 0)
@@ -4442,8 +4492,8 @@
     (pin "1" (uuid d6ca2543-4747-40e0-bd53-0b41970ca6a2))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR047") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR054") (unit 1)
         )
       )
     )
@@ -4452,7 +4502,7 @@
   (symbol (lib_id "power:GND") (at 32.385 86.995 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9987a160-d82d-4030-90b1-215f40bed715)
-    (property "Reference" "#PWR041" (at 38.735 86.995 0)
+    (property "Reference" "#PWR043" (at 38.735 86.995 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 37.465 86.995 90)
@@ -4467,8 +4517,33 @@
     (pin "1" (uuid 588caca1-893f-44d3-93d2-653ed9514a38))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR041") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR043") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 151.384 173.101 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 99f7a342-06be-4155-8bae-502545f84013)
+    (property "Reference" "#PWR061" (at 151.384 179.451 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 155.194 174.371 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 151.384 173.101 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 151.384 173.101 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 437ff4b7-ce43-46f9-bf1b-1b4b0ed4a217))
+    (instances
+      (project "clock_pcb"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR061") (unit 1)
         )
       )
     )
@@ -4477,7 +4552,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 258.445 90.17 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9bc1962a-2a9f-445a-9601-a73851b3f528)
-    (property "Reference" "R29" (at 254 88.9 90)
+    (property "Reference" "R31" (at 254 88.9 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "330k" (at 261.62 88.9 90)
@@ -4496,8 +4571,8 @@
     (pin "2" (uuid 740f8bdb-d46b-4033-8bef-2873bfcd3423))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R29") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R31") (unit 1)
         )
       )
     )
@@ -4506,7 +4581,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 255.905 146.05 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9bfa796b-e5b7-4496-b0ed-4948b621f30e)
-    (property "Reference" "R28" (at 258.445 144.78 90)
+    (property "Reference" "R30" (at 258.445 144.78 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 252.73 144.78 90)
@@ -4525,8 +4600,8 @@
     (pin "2" (uuid f5309c54-00a4-4990-bcbd-1ab335ad1ef0))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R28") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R30") (unit 1)
         )
       )
     )
@@ -4535,13 +4610,13 @@
   (symbol (lib_id "Connector_Generic:Conn_01x30") (at 270.51 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9dde1314-a4c0-4e19-af6a-2b008c8345dd)
-    (property "Reference" "J6" (at 269.24 23.495 0)
+    (property "Reference" "J7" (at 269.24 23.495 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "OLED" (at 267.97 102.87 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "ftp:OLED-128O064D_edit" (at 270.51 62.23 0)
+    (property "Footprint" "stride_footprints:OLED-128O064D_edit_reverse_v2" (at 270.51 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 270.51 62.23 0)
@@ -4551,6 +4626,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "desc" "Shenzhen Allvision Tech N096-2864KSWEG01-H30" (at 270.51 62.23 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "bom" "" (at 270.51 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c3ed0a02-f684-40a8-9a6d-25130f362180))
@@ -4585,8 +4663,8 @@
     (pin "9" (uuid 5c33f35d-a0fc-4022-b6b0-d025cfd4b31d))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "J6") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -4595,7 +4673,7 @@
   (symbol (lib_id "power:+3V3") (at 264.16 144.145 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9ec55c1b-33b5-4c36-bab7-7150b02ee548)
-    (property "Reference" "#PWR072" (at 264.16 147.955 0)
+    (property "Reference" "#PWR083" (at 264.16 147.955 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 263.525 140.335 0)
@@ -4610,8 +4688,8 @@
     (pin "1" (uuid a3c5d0e7-aff2-41a4-8bf2-5511dd429506))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR072") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR083") (unit 1)
         )
       )
     )
@@ -4620,7 +4698,7 @@
   (symbol (lib_id "power:GND") (at 34.544 119.126 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a1c6a921-1b0e-4c1d-b812-e6202d88f45b)
-    (property "Reference" "#PWR079" (at 34.544 125.476 0)
+    (property "Reference" "#PWR046" (at 34.544 125.476 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 36.576 121.666 0)
@@ -4635,43 +4713,8 @@
     (pin "1" (uuid 0811e75b-a72f-4b8e-8f59-cb046466129a))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR079") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_Schottky_Small") (at 153.289 172.339 90) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a6a30f2e-47d0-4ddf-85e9-8acf8f884fe0)
-    (property "Reference" "D6" (at 152.019 170.815 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SS14" (at 152.4 174.498 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Diode_SMD:D_SMA" (at 153.289 172.339 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 153.289 172.339 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "desc" "" (at 153.289 172.339 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "lcsc" "C2480" (at 153.289 172.339 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "bom" "" (at 153.289 172.339 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0116e8bf-8487-4c41-a651-83a4b42dec7d))
-    (pin "2" (uuid c0b96f5d-912a-41a0-b3e1-f4b8095cd30e))
-    (instances
-      (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "D6") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -4680,7 +4723,7 @@
   (symbol (lib_id "power:+3V3") (at 143.51 31.115 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a91b6923-0a1f-4d6b-a543-c2a40727d9f8)
-    (property "Reference" "#PWR046" (at 143.51 34.925 0)
+    (property "Reference" "#PWR053" (at 143.51 34.925 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 143.51 27.305 0)
@@ -4695,8 +4738,8 @@
     (pin "1" (uuid 4890c854-4d2e-4975-9235-8125fe25996a))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR046") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR053") (unit 1)
         )
       )
     )
@@ -4705,7 +4748,7 @@
   (symbol (lib_id "power:+3V3") (at 228.6 65.405 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid acf19bcb-12a5-4a0b-9d58-a06376afec55)
-    (property "Reference" "#PWR064" (at 228.6 69.215 0)
+    (property "Reference" "#PWR072" (at 228.6 69.215 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 228.6 61.595 0)
@@ -4720,8 +4763,8 @@
     (pin "1" (uuid 39ba53b6-d8f4-46ec-8328-f675299f7f82))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR064") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR072") (unit 1)
         )
       )
     )
@@ -4730,7 +4773,7 @@
   (symbol (lib_id "power:GND") (at 235.585 153.67 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ae5cb400-66af-47a5-bd72-d27b76622348)
-    (property "Reference" "#PWR067" (at 235.585 160.02 0)
+    (property "Reference" "#PWR075" (at 235.585 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 238.125 155.575 0)
@@ -4745,43 +4788,40 @@
     (pin "1" (uuid a4d624ca-dd7b-43e9-93c3-dbf28f273db7))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR067") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR075") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 160.147 172.212 0) (mirror y) (unit 1)
+  (symbol (lib_id "Device:C_Small") (at 151.384 169.926 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aed2fd17-8a43-4d10-a275-545fb854da45)
-    (property "Reference" "C1" (at 158.877 170.307 0)
+    (property "Reference" "C22" (at 155.829 168.656 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10u" (at 158.877 174.117 0)
+    (property "Value" "10u" (at 157.099 171.831 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 160.147 172.212 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 151.384 169.926 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 160.147 172.212 0)
+    (property "Datasheet" "~" (at 151.384 169.926 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "lcsc" "C15525" (at 160.147 172.212 0)
+    (property "lcsc" "C15525" (at 151.384 169.926 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "desc" "6.3V X5R" (at 160.147 172.212 0)
+    (property "desc" "6.3V X5R" (at 151.384 169.926 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0c07370c-4fe8-4563-b03e-a63376bb3b3d))
     (pin "2" (uuid 1dace492-17dc-4131-a0a8-40ba08888652))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e5f4b62e-4ea8-4014-b845-4f36ee3853d9"
-          (reference "C1") (unit 1)
-        )
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "C32") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -4790,7 +4830,7 @@
   (symbol (lib_id "power:GND") (at 30.734 128.651 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b3780cbf-ffc5-4a5a-bffd-d9961c0c8958)
-    (property "Reference" "#PWR074" (at 30.734 135.001 0)
+    (property "Reference" "#PWR037" (at 30.734 135.001 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 30.734 132.461 0)
@@ -4805,33 +4845,8 @@
     (pin "1" (uuid c25d1fa1-32ec-4634-9e73-cb9b6ffd5c31))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR074") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 124.587 166.624 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid b678f0cb-d999-42b6-8bda-7a94200fd65c)
-    (property "Reference" "#PWR085" (at 124.587 172.974 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 127.635 169.164 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 124.587 166.624 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 124.587 166.624 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ad58de6f-b8a8-4d86-82c1-39a1211a188f))
-    (instances
-      (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR085") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -4840,7 +4855,7 @@
   (symbol (lib_id "power:+3V3") (at 147.32 76.835 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c1e28d4c-7365-40c0-b4e0-23cf663dc5bc)
-    (property "Reference" "#PWR048" (at 147.32 80.645 0)
+    (property "Reference" "#PWR057" (at 147.32 80.645 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 146.685 73.025 0)
@@ -4855,8 +4870,8 @@
     (pin "1" (uuid 9fc9bc43-513a-4d25-a640-63acdbfef0f4))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR048") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -4865,7 +4880,7 @@
   (symbol (lib_id "power:+3V3") (at 185.42 83.82 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c1ff2943-1231-47e6-869c-b0c2224477a6)
-    (property "Reference" "#PWR061" (at 185.42 87.63 0)
+    (property "Reference" "#PWR070" (at 185.42 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 185.42 80.01 0)
@@ -4880,8 +4895,8 @@
     (pin "1" (uuid ae44dd8b-ad29-4968-b56a-d4cf3e012765))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR061") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -4890,7 +4905,7 @@
   (symbol (lib_id "power:+3V3") (at 154.305 83.185 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c6ac6b1e-6f67-4cc5-96ce-04e1756bf233)
-    (property "Reference" "#PWR050" (at 154.305 86.995 0)
+    (property "Reference" "#PWR062" (at 154.305 86.995 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 153.67 79.375 0)
@@ -4905,8 +4920,8 @@
     (pin "1" (uuid db826adb-8dc1-4c99-a377-472e41cf7389))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR050") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR062") (unit 1)
         )
       )
     )
@@ -4915,7 +4930,7 @@
   (symbol (lib_id "power:+5V") (at 160.782 126.111 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c6c07245-e1ff-46c6-a223-cff1fd9e2342)
-    (property "Reference" "#PWR058" (at 160.782 129.921 0)
+    (property "Reference" "#PWR064" (at 160.782 129.921 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 160.782 122.5065 0)
@@ -4930,60 +4945,35 @@
     (pin "1" (uuid ac5628ac-417e-4b3b-bb70-c41a8492f6b5))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR058") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR064") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 160.147 175.895 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid cac4e329-b2e4-4d65-810f-7f19234f9b9a)
-    (property "Reference" "#PWR086" (at 160.147 182.245 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 163.195 178.435 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 160.147 175.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 160.147 175.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b0b1cf28-ab3e-45c5-813e-f1d566d0e36e))
-    (instances
-      (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR086") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Transistor_FET:AO3400A") (at 143.129 184.404 0) (mirror y) (unit 1)
+  (symbol (lib_id "Transistor_FET:AO3400A") (at 142.24 182.245 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cb0a9ebf-7a41-4b9d-81b2-77883a6483d0)
-    (property "Reference" "Q5" (at 137.795 183.769 0)
+    (property "Reference" "Q3" (at 136.906 181.61 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "AO3400A" (at 137.795 186.309 0)
+    (property "Value" "AO3400A" (at 136.906 184.15 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 138.049 186.309 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 137.16 184.15 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
-    (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" (at 143.129 184.404 0)
+    (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" (at 142.24 182.245 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "desc" "" (at 143.129 184.404 0)
+    (property "desc" "" (at 142.24 182.245 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "lcsc" "C20917" (at 143.129 184.404 0)
+    (property "lcsc" "C20917" (at 142.24 182.245 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "bom" "" (at 143.129 184.404 0)
+    (property "bom" "" (at 142.24 182.245 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9d72a49d-d072-4eb4-95dc-0c65e7706c04))
@@ -4991,11 +4981,8 @@
     (pin "3" (uuid f8fd6769-8371-4e31-9a0f-0443d80fb162))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e5f4b62e-4ea8-4014-b845-4f36ee3853d9"
-          (reference "Q5") (unit 1)
-        )
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "Q5") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "Q3") (unit 1)
         )
       )
     )
@@ -5004,7 +4991,7 @@
   (symbol (lib_id "power:+3V3") (at 177.292 126.111 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cbb81074-af18-4476-8ca4-81a9d3fff613)
-    (property "Reference" "#PWR062" (at 177.292 129.921 0)
+    (property "Reference" "#PWR069" (at 177.292 129.921 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 177.292 122.301 0)
@@ -5019,8 +5006,8 @@
     (pin "1" (uuid 00176de2-1ef9-4948-b300-51d9d06b34d8))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR062") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -5029,7 +5016,7 @@
   (symbol (lib_id "power:GND") (at 130.175 55.245 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd1ee36a-fb16-45d0-a7fb-06baea326df4)
-    (property "Reference" "#PWR045" (at 130.175 61.595 0)
+    (property "Reference" "#PWR050" (at 130.175 61.595 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 130.175 59.055 0)
@@ -5044,8 +5031,8 @@
     (pin "1" (uuid 2d1188f5-8957-4907-98e6-3de264508e2f))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR045") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -5054,7 +5041,7 @@
   (symbol (lib_id "Device:C_Small") (at 251.46 34.29 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ce490d41-8ac4-44af-a74b-b826d6d5b197)
-    (property "Reference" "C29" (at 247.65 33.02 90)
+    (property "Reference" "C30" (at 247.65 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 254 33.02 90)
@@ -5076,8 +5063,8 @@
     (pin "2" (uuid 1bee7159-4330-4cb1-a4af-fc8f959c62d3))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "C29") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "C30") (unit 1)
         )
       )
     )
@@ -5086,7 +5073,7 @@
   (symbol (lib_id "power:GND") (at 32.385 97.155 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d5f8267a-5fdb-44c0-803d-08441e4a78bd)
-    (property "Reference" "#PWR076" (at 38.735 97.155 0)
+    (property "Reference" "#PWR045" (at 38.735 97.155 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 37.465 97.155 90)
@@ -5101,8 +5088,8 @@
     (pin "1" (uuid 58589581-d052-49e3-9633-f2e43aa94a71))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR076") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -5133,8 +5120,43 @@
     (pin "2" (uuid 0cb0c7b6-2cb6-4e5b-9fd5-895a9b51d5b8))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "Y2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:D_Schottky_Small") (at 139.7 172.72 90) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e3295f35-e7f7-4824-97a3-026524eb9411)
+    (property "Reference" "D6" (at 144.145 171.45 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "SS14" (at 146.685 174.625 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Diode_SMD:D_SMA" (at 139.7 172.72 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 139.7 172.72 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "desc" "" (at 139.7 172.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "lcsc" "C2480" (at 139.7 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "bom" "" (at 139.7 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 154d04c3-93de-496a-a194-5c1c597f9e7b))
+    (pin "2" (uuid f48cfa33-7281-43df-8abd-1c088c789d7a))
+    (instances
+      (project "clock_pcb"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "D6") (unit 1)
         )
       )
     )
@@ -5143,7 +5165,7 @@
   (symbol (lib_id "Transistor_FET:2N7002") (at 169.037 135.001 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e4d2e95d-9137-4bda-8c4b-4c63463eee02)
-    (property "Reference" "Q3" (at 170.942 132.461 90)
+    (property "Reference" "Q4" (at 170.942 132.461 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2N7002" (at 169.037 141.351 90)
@@ -5163,8 +5185,8 @@
     (pin "3" (uuid c328c346-32e8-4339-a70a-7c0e76d72365))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "Q3") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "Q4") (unit 1)
         )
       )
     )
@@ -5195,7 +5217,7 @@
     (pin "2" (uuid 72fa74dd-5ebf-4698-a3f5-67937117ad41))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "C21") (unit 1)
         )
       )
@@ -5205,7 +5227,7 @@
   (symbol (lib_id "power:GND") (at 162.56 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e8f020b3-15d6-4ecf-96d8-2ca5f1a818c3)
-    (property "Reference" "#PWR057" (at 162.56 62.23 0)
+    (property "Reference" "#PWR066" (at 162.56 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 162.56 59.69 0)
@@ -5220,8 +5242,8 @@
     (pin "1" (uuid 3c294887-e581-4cec-9d94-f83b8e07100b))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR057") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR066") (unit 1)
         )
       )
     )
@@ -5249,7 +5271,7 @@
     (pin "2" (uuid 96daade3-f82f-4bad-8ab0-15551a4b9640))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "R18") (unit 1)
         )
       )
@@ -5281,7 +5303,7 @@
     (pin "2" (uuid a105f50f-c8ed-4cc3-8f66-6dba9516ed16))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "C31") (unit 1)
         )
       )
@@ -5291,7 +5313,7 @@
   (symbol (lib_name "Conn_01x02_1") (lib_id "Connector_Generic:Conn_01x02") (at 245.11 148.59 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f6391de4-c895-4210-8c23-f3dcc966f5d9)
-    (property "Reference" "J4" (at 245.11 140.97 0)
+    (property "Reference" "J6" (at 245.11 140.97 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5V" (at 245.745 151.765 0)
@@ -5317,8 +5339,8 @@
     (pin "MP" (uuid 854865d8-4dc4-40ae-b79e-3ee4f154b671))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "J4") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -5349,7 +5371,7 @@
     (pin "2" (uuid 95eb0ba9-3d99-4f5f-be3f-9a4fdaed38a5))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
           (reference "C26") (unit 1)
         )
       )
@@ -5359,7 +5381,7 @@
   (symbol (lib_id "power:GND") (at 32.385 94.615 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fa5d2ada-4f93-49e1-b431-85ae69eda17d)
-    (property "Reference" "#PWR042" (at 38.735 94.615 0)
+    (property "Reference" "#PWR044" (at 38.735 94.615 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 37.465 94.615 90)
@@ -5374,8 +5396,8 @@
     (pin "1" (uuid 35d04dac-2a11-4ee1-9f2b-2944db44b061))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR042") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -5384,7 +5406,7 @@
   (symbol (lib_id "power:+5V") (at 144.272 132.461 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fdec153c-91b5-4b3b-9dfb-e8107db149b6)
-    (property "Reference" "#PWR051" (at 144.272 136.271 0)
+    (property "Reference" "#PWR055" (at 144.272 136.271 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 144.272 128.8565 0)
@@ -5399,8 +5421,8 @@
     (pin "1" (uuid 38a431f2-995b-4b90-8f2c-fc3393021d28))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "#PWR051") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "#PWR055") (unit 1)
         )
       )
     )
@@ -5409,7 +5431,7 @@
   (symbol (lib_id "Device:C_Small") (at 228.6 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fecda591-0365-4e1f-92de-49bb1277ec89)
-    (property "Reference" "C24" (at 229.362 80.772 0)
+    (property "Reference" "C25" (at 229.362 80.772 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 229.616 84.582 0)
@@ -5431,37 +5453,37 @@
     (pin "2" (uuid 3b408c35-1d65-4531-9418-9000961902b8))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "C24") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "C25") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:R_Small_US") (at 152.019 184.404 270) (mirror x) (unit 1)
+  (symbol (lib_id "Device:R_Small_US") (at 151.765 182.245 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fefc4009-8e36-4bce-aa56-3c32a2205e97)
-    (property "Reference" "R31" (at 152.527 182.118 90)
+    (property "Reference" "R21" (at 152.273 179.959 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10k" (at 152.527 186.944 90)
+    (property "Value" "10k" (at 152.273 184.785 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 152.019 184.404 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 151.765 182.245 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 152.019 184.404 0)
+    (property "Datasheet" "~" (at 151.765 182.245 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "lcsc" "C25744" (at 152.019 184.404 90)
+    (property "lcsc" "C25744" (at 151.765 182.245 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e1982e3a-045a-473e-87a9-ca8eedaaa5a5))
     (pin "2" (uuid 416d9d27-f31c-48c2-9e4b-f845d483236f))
     (instances
       (project "clock_pcb"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/f40a42f5-65fe-434e-9c82-55cea7abd9dd"
-          (reference "R31") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/05d988ef-d5db-40c4-a11a-450249f6a23d"
+          (reference "R21") (unit 1)
         )
       )
     )

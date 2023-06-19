@@ -2417,10 +2417,6 @@
     (stroke (width 0) (type solid))
     (uuid 2b05a261-50cf-4710-97f8-eae06a1d26b1)
   )
-  (wire (pts (xy 70.485 37.465) (xy 80.645 37.465))
-    (stroke (width 0) (type default))
-    (uuid 2bae883a-b164-45ac-bef8-0b927f76a64f)
-  )
   (wire (pts (xy 232.41 40.005) (xy 232.41 41.91))
     (stroke (width 0) (type default))
     (uuid 2dac3182-5f0b-4cda-b1db-074e7fa6eda2)
@@ -2448,6 +2444,10 @@
   (wire (pts (xy 56.515 109.855) (xy 56.515 112.395))
     (stroke (width 0) (type solid))
     (uuid 32f639da-e6a5-4f8d-8932-d4e968ca6ae7)
+  )
+  (wire (pts (xy 70.485 42.545) (xy 80.645 42.545))
+    (stroke (width 0) (type default))
+    (uuid 32ffa73f-a777-4724-b8ef-1ba30c979ef3)
   )
   (wire (pts (xy 90.17 154.94) (xy 99.06 154.94))
     (stroke (width 0) (type solid))
@@ -2672,6 +2672,10 @@
   (wire (pts (xy 59.69 22.225) (xy 59.69 24.765))
     (stroke (width 0) (type default))
     (uuid 6c9a076d-21ce-48cc-a4d7-55822e95fa95)
+  )
+  (wire (pts (xy 70.485 37.465) (xy 80.645 37.465))
+    (stroke (width 0) (type default))
+    (uuid 6d2f15d7-c025-402c-96e1-7736d6cabfe1)
   )
   (wire (pts (xy 141.605 82.55) (xy 146.685 82.55))
     (stroke (width 0) (type solid))
@@ -2964,10 +2968,6 @@
   (wire (pts (xy 81.28 82.55) (xy 81.28 81.28))
     (stroke (width 0) (type default))
     (uuid ab70e9e8-b277-4c9c-9118-41d6e18a17c2)
-  )
-  (wire (pts (xy 70.485 42.545) (xy 80.645 42.545))
-    (stroke (width 0) (type default))
-    (uuid acc1e301-ae95-4e71-911c-dfe7d4d56429)
   )
   (wire (pts (xy 55.88 82.55) (xy 55.88 81.28))
     (stroke (width 0) (type default))
@@ -3440,6 +3440,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1d47bdcb-a731-49cc-8223-4004234b7a35)
   )
+  (label "USB_D+" (at 70.485 42.545 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 1ef0923e-a105-4dbb-aca1-0da64f01b1ab)
+  )
   (label "QSPI_SD1" (at 138.43 90.17 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 2638b0f3-42f2-4010-a867-0edea90e789a)
@@ -3512,10 +3516,6 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 805b6bed-4510-4324-94a3-d59ad2e884f8)
   )
-  (label "USB_D+" (at 70.485 37.465 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 8449aee8-19a1-4db0-b373-71c0db74b479)
-  )
   (label "~{RESET}" (at 230.505 130.175 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8cc2754c-0809-447f-9467-678ef015292a)
@@ -3552,10 +3552,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c6150414-6855-4139-bfd0-428daab0b52d)
   )
-  (label "USB_D-" (at 70.485 42.545 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid c67b764f-e567-46a7-ae83-af972fb87b8d)
-  )
   (label "QSPI_SD0" (at 218.44 76.2 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c9815892-3c1d-47bb-82f4-b2902596cb06)
@@ -3579,6 +3575,10 @@
   (label "~{QSPI_CS}" (at 218.44 71.12 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f6f5e37f-0439-487d-b977-61c2bdc96632)
+  )
+  (label "USB_D-" (at 70.485 37.465 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid fe3c3a8f-3517-4207-a318-1a7a66eb9bb5)
   )
 
   (global_label "GPIO6" (shape output) (at 138.43 115.57 0) (fields_autoplaced)
@@ -3801,7 +3801,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R4") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -3810,7 +3810,7 @@
   (symbol (lib_id "power:+3.3V") (at 264.16 69.85 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0534c13f-eef7-4df5-ae52-7fd147ec48c4)
-    (property "Reference" "#PWR033" (at 264.16 73.66 0)
+    (property "Reference" "#PWR032" (at 264.16 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 264.16 66.04 0)
@@ -3826,7 +3826,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR081") (unit 1)
         )
       )
     )
@@ -3858,7 +3858,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C9") (unit 1)
+          (reference "C23") (unit 1)
         )
       )
     )
@@ -3867,7 +3867,7 @@
   (symbol (lib_id "power:+3.3V") (at 95.25 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 06c47154-d692-4889-afed-d9df5f0603d5)
-    (property "Reference" "#PWR017" (at 95.25 83.82 0)
+    (property "Reference" "#PWR016" (at 95.25 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 95.25 76.2 0)
@@ -3883,7 +3883,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR065") (unit 1)
         )
       )
     )
@@ -3892,7 +3892,7 @@
   (symbol (lib_id "power:+3V3") (at 266.7 106.045 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 08d4ac08-d15b-4806-b53b-ba62651881c1)
-    (property "Reference" "#PWR035" (at 266.7 109.855 0)
+    (property "Reference" "#PWR034" (at 266.7 109.855 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 266.7 102.235 0)
@@ -3908,7 +3908,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR083") (unit 1)
         )
       )
     )
@@ -3917,7 +3917,7 @@
   (symbol (lib_id "power:+3V3") (at 177.8 137.16 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0b383e54-8c65-4e4e-a7cf-ed3cd360e1cd)
-    (property "Reference" "#PWR025" (at 177.8 140.97 0)
+    (property "Reference" "#PWR026" (at 177.8 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 177.8 133.35 0)
@@ -3933,7 +3933,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR073") (unit 1)
         )
       )
     )
@@ -3942,7 +3942,7 @@
   (symbol (lib_id "power:GND") (at 56.515 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0c62f972-d42c-460a-803d-531c11d7a151)
-    (property "Reference" "#PWR06" (at 56.515 137.16 0)
+    (property "Reference" "#PWR08" (at 56.515 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 56.515 134.62 0)
@@ -3958,7 +3958,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR054") (unit 1)
         )
       )
     )
@@ -3990,7 +3990,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C14") (unit 1)
+          (reference "C28") (unit 1)
         )
       )
     )
@@ -3999,7 +3999,7 @@
   (symbol (lib_id "Connector:TestPoint_Small") (at 172.085 32.385 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 158f9dee-ec88-45b7-84c9-97fc4e158b08)
-    (property "Reference" "TP5" (at 172.72 32.385 0)
+    (property "Reference" "TP4" (at 172.72 32.385 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5V" (at 173.228 34.2516 0)
@@ -4050,7 +4050,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C6") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -4059,7 +4059,7 @@
   (symbol (lib_id "power:VBUS") (at 93.345 24.765 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1a1ab757-51de-4969-8924-8675206b3aa2)
-    (property "Reference" "#PWR014" (at 93.345 28.575 0)
+    (property "Reference" "#PWR09" (at 93.345 28.575 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 93.345 21.1605 0)
@@ -4075,7 +4075,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR062") (unit 1)
         )
       )
     )
@@ -4122,7 +4122,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 232.41 37.465 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1fa019bf-c5f0-47d6-90d0-5f70701d947c)
-    (property "Reference" "R15" (at 235.585 36.83 0)
+    (property "Reference" "R17" (at 235.585 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "300" (at 236.22 39.37 0)
@@ -4142,7 +4142,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R15") (unit 1)
+          (reference "R29") (unit 1)
         )
       )
     )
@@ -4177,7 +4177,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "D3") (unit 1)
+          (reference "D5") (unit 1)
         )
       )
     )
@@ -4234,7 +4234,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "Q1") (unit 1)
+          (reference "Q3") (unit 1)
         )
       )
     )
@@ -4243,7 +4243,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 76.2 187.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 39cfb7b2-154d-4346-9c1b-d5928068b862)
-    (property "Reference" "TP4" (at 72.39 185.42 90)
+    (property "Reference" "TP8" (at 72.39 185.42 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "GND CLIP" (at 73.66 190.5 90)
@@ -4277,7 +4277,7 @@
   (symbol (lib_id "power:GND") (at 156.845 48.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3a71e4f8-929c-487e-bcb7-5543a8ce30cd)
-    (property "Reference" "#PWR022" (at 156.845 55.245 0)
+    (property "Reference" "#PWR020" (at 156.845 55.245 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 160.02 51.435 0)
@@ -4293,7 +4293,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -4330,7 +4330,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 147.32 43.18 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4171771a-aa1a-486c-bd86-020698dc2fe4)
-    (property "Reference" "R10" (at 144.78 41.91 0)
+    (property "Reference" "R9" (at 144.78 41.91 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 143.51 44.45 0)
@@ -4350,7 +4350,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R10") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
     )
@@ -4359,7 +4359,7 @@
   (symbol (lib_id "MCU_RaspberryPi:RP2040") (at 113.03 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4244b05c-86ca-444d-891c-237cb6d74d4a)
-    (property "Reference" "U1" (at 104.14 78.74 0)
+    (property "Reference" "U2" (at 104.14 78.74 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "RP2040" (at 121.92 177.8 0)
@@ -4440,7 +4440,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "U1") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -4475,7 +4475,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "D1") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -4484,7 +4484,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 52.07 32.385 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 446a51c2-8d8e-4def-a3ce-32c952a01f96)
-    (property "Reference" "R3" (at 47.625 31.115 90)
+    (property "Reference" "R2" (at 47.625 31.115 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5.1k" (at 55.88 31.115 90)
@@ -4504,7 +4504,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R3") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -4565,7 +4565,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R14") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
     )
@@ -4574,7 +4574,7 @@
   (symbol (lib_id "Power_Protection:SRV05-4") (at 93.345 40.005 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 48c8bfcf-1c00-4ca3-802b-d71b23cd48eb)
-    (property "Reference" "U2" (at 85.725 28.575 0)
+    (property "Reference" "U1" (at 85.725 28.575 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SRV05-4" (at 95.25 51.435 0)
@@ -4623,7 +4623,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -4632,7 +4632,7 @@
   (symbol (lib_id "power:GND") (at 149.86 60.325 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 49a8eb8c-6101-466b-b6e2-29b32c6c5683)
-    (property "Reference" "#PWR021" (at 149.86 66.675 0)
+    (property "Reference" "#PWR019" (at 149.86 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 149.86 64.135 0)
@@ -4648,7 +4648,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -4657,7 +4657,7 @@
   (symbol (lib_id "power:GND") (at 203.835 41.275 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d70a61d-1af9-4258-a491-00672cec40d5)
-    (property "Reference" "#PWR029" (at 203.835 47.625 0)
+    (property "Reference" "#PWR028" (at 203.835 47.625 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 203.835 45.085 0)
@@ -4673,7 +4673,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
       )
     )
@@ -4702,7 +4702,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R8") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -4734,7 +4734,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "SW1") (unit 1)
+          (reference "SW3") (unit 1)
         )
       )
     )
@@ -4743,7 +4743,7 @@
   (symbol (lib_id "power:GND") (at 221.615 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 54dbd678-f489-46c9-8edd-a6ed82da6557)
-    (property "Reference" "#PWR030" (at 221.615 46.99 0)
+    (property "Reference" "#PWR029" (at 221.615 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 221.615 44.45 0)
@@ -4759,7 +4759,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR078") (unit 1)
         )
       )
     )
@@ -4791,7 +4791,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C17") (unit 1)
+          (reference "C31") (unit 1)
         )
       )
     )
@@ -4800,7 +4800,7 @@
   (symbol (lib_id "power:+3.3V") (at 141.605 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5d31d136-dfa5-4f1d-b984-a5ffebd84ede)
-    (property "Reference" "#PWR020" (at 141.605 77.47 0)
+    (property "Reference" "#PWR021" (at 141.605 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 141.605 69.85 0)
@@ -4816,7 +4816,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR068") (unit 1)
         )
       )
     )
@@ -4879,7 +4879,7 @@
   (symbol (lib_id "power:GND") (at 264.16 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5dfec0f4-f1d5-4200-951c-07c14b2eb526)
-    (property "Reference" "#PWR034" (at 264.16 91.44 0)
+    (property "Reference" "#PWR033" (at 264.16 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 264.16 88.9 0)
@@ -4895,7 +4895,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR082") (unit 1)
         )
       )
     )
@@ -4927,7 +4927,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C3") (unit 1)
+          (reference "C17") (unit 1)
         )
       )
     )
@@ -4936,7 +4936,7 @@
   (symbol (lib_id "power:GND") (at 59.69 33.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6033c745-841b-4fba-999f-d9ad2b7f73e8)
-    (property "Reference" "#PWR08" (at 59.69 40.005 0)
+    (property "Reference" "#PWR04" (at 59.69 40.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 62.23 36.195 0)
@@ -4952,7 +4952,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -4961,7 +4961,7 @@
   (symbol (lib_id "power:GND") (at 43.18 133.985 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 61058e59-627d-4706-ad40-361cb10c6dc0)
-    (property "Reference" "#PWR03" (at 43.18 140.335 0)
+    (property "Reference" "#PWR05" (at 43.18 140.335 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 43.18 137.795 0)
@@ -4977,7 +4977,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
       )
     )
@@ -4986,7 +4986,7 @@
   (symbol (lib_id "power:GND") (at 46.99 172.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 62317418-30a5-451a-b08a-90deb78f5fd4)
-    (property "Reference" "#PWR04" (at 46.99 178.435 0)
+    (property "Reference" "#PWR06" (at 46.99 178.435 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 46.99 175.895 0)
@@ -5002,7 +5002,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR052") (unit 1)
         )
       )
     )
@@ -5011,7 +5011,7 @@
   (symbol (lib_id "power:GND") (at 86.36 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 62ab1f6a-e610-44fc-859f-3da5e20dfc4e)
-    (property "Reference" "#PWR011" (at 86.36 120.65 0)
+    (property "Reference" "#PWR012" (at 86.36 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 86.36 118.11 0)
@@ -5027,7 +5027,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR059") (unit 1)
         )
       )
     )
@@ -5059,7 +5059,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C11") (unit 1)
+          (reference "C25") (unit 1)
         )
       )
     )
@@ -5123,7 +5123,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C13") (unit 1)
+          (reference "C27") (unit 1)
         )
       )
     )
@@ -5132,7 +5132,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 52.07 29.845 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6abecc44-48ca-4279-b275-a958545f9f3b)
-    (property "Reference" "R2" (at 47.625 28.575 90)
+    (property "Reference" "R1" (at 47.625 28.575 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5.1k" (at 55.88 28.575 90)
@@ -5152,7 +5152,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R2") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -5188,7 +5188,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "SW2") (unit 1)
+          (reference "SW4") (unit 1)
         )
       )
     )
@@ -5197,7 +5197,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 141.605 77.47 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6b8f825c-74ee-42c4-ba72-6b83861ec357)
-    (property "Reference" "R9" (at 138.43 76.2 0)
+    (property "Reference" "R10" (at 138.43 76.2 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 139.065 78.74 0)
@@ -5217,7 +5217,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R9") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -5249,7 +5249,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C5") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -5280,7 +5280,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "Y1") (unit 1)
+          (reference "Y2") (unit 1)
         )
       )
     )
@@ -5312,7 +5312,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C12") (unit 1)
+          (reference "C26") (unit 1)
         )
       )
     )
@@ -5344,7 +5344,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C2") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -5376,7 +5376,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "D2") (unit 1)
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -5385,7 +5385,7 @@
   (symbol (lib_id "master:R_Small_US_3pad") (at 241.935 136.525 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7d7492eb-891c-40a7-8be8-136da9a171f5)
-    (property "Reference" "R17" (at 245.745 134.62 0)
+    (property "Reference" "R16" (at 245.745 134.62 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0" (at 248.92 136.525 0)
@@ -5412,7 +5412,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R17") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
     )
@@ -5451,7 +5451,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "U4") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -5487,7 +5487,7 @@
   (symbol (lib_id "power:GND") (at 169.545 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7ef38152-4d51-49de-a8ef-be82c69c24ba)
-    (property "Reference" "#PWR024" (at 169.545 55.88 0)
+    (property "Reference" "#PWR023" (at 169.545 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.545 53.34 0)
@@ -5503,7 +5503,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR072") (unit 1)
         )
       )
     )
@@ -5512,7 +5512,7 @@
   (symbol (lib_id "power:GND") (at 87.63 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 861a1f9f-ac38-4642-bb2a-045c5b397489)
-    (property "Reference" "#PWR013" (at 87.63 96.52 0)
+    (property "Reference" "#PWR014" (at 87.63 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 87.63 93.98 0)
@@ -5528,7 +5528,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR061") (unit 1)
         )
       )
     )
@@ -5537,7 +5537,7 @@
   (symbol (lib_id "Connector:TestPoint_Small") (at 172.085 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 87e7d47a-5db6-4300-b0bf-c21b35244369)
-    (property "Reference" "TP6" (at 173.355 48.26 0)
+    (property "Reference" "TP5" (at 173.355 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5V" (at 173.228 50.1266 0)
@@ -5588,7 +5588,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C10") (unit 1)
+          (reference "C24") (unit 1)
         )
       )
     )
@@ -5623,7 +5623,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "D4") (unit 1)
+          (reference "D6") (unit 1)
         )
       )
     )
@@ -5655,7 +5655,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C16") (unit 1)
+          (reference "C30") (unit 1)
         )
       )
     )
@@ -5664,7 +5664,7 @@
   (symbol (lib_id "power:VBUS") (at 120.65 27.305 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9507a60d-45cc-49a0-b125-afb9d04ddc32)
-    (property "Reference" "#PWR019" (at 120.65 31.115 0)
+    (property "Reference" "#PWR018" (at 120.65 31.115 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 120.65 23.7005 0)
@@ -5680,7 +5680,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -5689,7 +5689,7 @@
   (symbol (lib_id "power:GND") (at 93.345 53.975 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 973d9e33-7f28-487d-8f33-9356ece23598)
-    (property "Reference" "#PWR015" (at 93.345 60.325 0)
+    (property "Reference" "#PWR010" (at 93.345 60.325 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 93.345 57.785 0)
@@ -5705,7 +5705,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR063") (unit 1)
         )
       )
     )
@@ -5742,7 +5742,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 169.545 36.83 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9ab190db-148c-4af6-bb64-d119d5ebf7a8)
-    (property "Reference" "R12" (at 172.72 36.195 0)
+    (property "Reference" "R11" (at 172.72 36.195 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.2k" (at 173.355 38.1 0)
@@ -5762,7 +5762,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R12") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
     )
@@ -5771,7 +5771,7 @@
   (symbol (lib_id "power:+3V3") (at 87.63 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9f3789d9-db68-4e7a-81fb-c66ab0020bd3)
-    (property "Reference" "#PWR012" (at 87.63 83.82 0)
+    (property "Reference" "#PWR013" (at 87.63 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 87.63 76.2 0)
@@ -5787,7 +5787,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -5816,7 +5816,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R13") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
     )
@@ -5863,7 +5863,7 @@
   (symbol (lib_id "power:GND") (at 77.47 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a20fe95d-b3f8-44b4-82a1-c60b0f1767b3)
-    (property "Reference" "#PWR09" (at 77.47 163.83 0)
+    (property "Reference" "#PWR011" (at 77.47 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 77.47 161.29 0)
@@ -5879,7 +5879,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -5911,7 +5911,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C8") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -5970,7 +5970,7 @@
   (symbol (lib_id "power:GND") (at 182.88 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b6348888-3d0a-49d4-b29e-5eaf4a3ce9b2)
-    (property "Reference" "#PWR026" (at 182.88 90.17 0)
+    (property "Reference" "#PWR027" (at 182.88 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 182.88 87.63 0)
@@ -5986,7 +5986,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR074") (unit 1)
         )
       )
     )
@@ -5995,7 +5995,7 @@
   (symbol (lib_id "power:GND") (at 188.595 40.005 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8822758-430c-4efd-821e-07c84fc4812e)
-    (property "Reference" "#PWR028" (at 188.595 46.355 0)
+    (property "Reference" "#PWR025" (at 188.595 46.355 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 188.595 43.815 0)
@@ -6011,7 +6011,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR076") (unit 1)
         )
       )
     )
@@ -6081,7 +6081,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C18") (unit 1)
+          (reference "C32") (unit 1)
         )
       )
     )
@@ -6118,7 +6118,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 48.26 120.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c40889c9-5f0c-4a97-b4d5-7891c6d5c414)
-    (property "Reference" "R1" (at 50.8 119.38 90)
+    (property "Reference" "R3" (at 50.8 119.38 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 44.45 119.38 90)
@@ -6138,7 +6138,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R1") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -6174,7 +6174,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "J2") (unit 1)
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -6183,7 +6183,7 @@
   (symbol (lib_id "power:VBUS") (at 59.69 22.225 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c91cd2e5-3f64-48b0-b17b-082753221b18)
-    (property "Reference" "#PWR07" (at 59.69 26.035 0)
+    (property "Reference" "#PWR03" (at 59.69 26.035 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 59.69 18.6205 0)
@@ -6199,7 +6199,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR055") (unit 1)
         )
       )
     )
@@ -6208,7 +6208,7 @@
   (symbol (lib_id "power:GND") (at 266.7 114.935 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cb7901e1-c4d1-43f7-be2b-bdab592a5b56)
-    (property "Reference" "#PWR036" (at 266.7 121.285 0)
+    (property "Reference" "#PWR035" (at 266.7 121.285 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 266.7 118.745 0)
@@ -6224,7 +6224,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR084") (unit 1)
         )
       )
     )
@@ -6233,7 +6233,7 @@
   (symbol (lib_id "power:GND") (at 232.41 50.165 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd065b82-0cf5-4208-b86e-c662ada48d95)
-    (property "Reference" "#PWR032" (at 232.41 56.515 0)
+    (property "Reference" "#PWR031" (at 232.41 56.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 232.41 53.975 0)
@@ -6249,7 +6249,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR080") (unit 1)
         )
       )
     )
@@ -6278,7 +6278,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R5") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -6308,7 +6308,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "Q2") (unit 1)
+          (reference "Q4") (unit 1)
         )
       )
     )
@@ -6317,7 +6317,7 @@
   (symbol (lib_id "Connector:TestPoint_Small") (at 234.95 48.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d30c8145-e4c9-4fb2-bbd6-3a664da0ec70)
-    (property "Reference" "TP8" (at 236.22 48.895 0)
+    (property "Reference" "TP7" (at 236.22 48.895 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5V" (at 236.093 50.7616 0)
@@ -6368,7 +6368,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C4") (unit 1)
+          (reference "C18") (unit 1)
         )
       )
     )
@@ -6377,7 +6377,7 @@
   (symbol (lib_id "power:+5V") (at 169.545 27.305 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dafbc4d4-726b-47c7-b074-8d381c5f7477)
-    (property "Reference" "#PWR023" (at 169.545 31.115 0)
+    (property "Reference" "#PWR022" (at 169.545 31.115 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 169.545 23.7005 0)
@@ -6393,7 +6393,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -6454,7 +6454,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R7") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -6489,7 +6489,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "U3") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -6521,7 +6521,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C1") (unit 1)
+          (reference "C15") (unit 1)
         )
       )
     )
@@ -6546,7 +6546,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -6555,7 +6555,7 @@
   (symbol (lib_id "power:GND") (at 93.98 151.13 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e3247172-37c9-46fd-aee8-1820979690d3)
-    (property "Reference" "#PWR016" (at 100.33 151.13 0)
+    (property "Reference" "#PWR015" (at 100.33 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 98.425 151.13 90)
@@ -6571,7 +6571,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR064") (unit 1)
         )
       )
     )
@@ -6580,7 +6580,7 @@
   (symbol (lib_id "power:GND") (at 97.79 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e5833542-9d52-4f80-a86d-e740d7474e1c)
-    (property "Reference" "#PWR018" (at 97.79 181.61 0)
+    (property "Reference" "#PWR017" (at 97.79 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 97.79 179.07 0)
@@ -6596,7 +6596,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR066") (unit 1)
         )
       )
     )
@@ -6605,7 +6605,7 @@
   (symbol (lib_id "power:+3V3") (at 56.515 109.855 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e6e244a1-7bb6-469f-bd3a-38a6aaf537a3)
-    (property "Reference" "#PWR05" (at 56.515 113.665 0)
+    (property "Reference" "#PWR07" (at 56.515 113.665 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 56.515 106.045 0)
@@ -6621,7 +6621,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR053") (unit 1)
         )
       )
     )
@@ -6650,7 +6650,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R6") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -6682,7 +6682,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "SW3") (unit 1)
+          (reference "SW5") (unit 1)
         )
       )
     )
@@ -6714,7 +6714,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C7") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -6723,7 +6723,7 @@
   (symbol (lib_id "master:R_Small_US_3pad") (at 241.935 130.175 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4497006-b57d-453b-9271-35fd36a9bfd7)
-    (property "Reference" "R16" (at 245.745 128.27 0)
+    (property "Reference" "R15" (at 245.745 128.27 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0" (at 248.92 130.175 0)
@@ -6750,7 +6750,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R16") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
     )
@@ -6759,7 +6759,7 @@
   (symbol (lib_id "power:+3V3") (at 232.41 26.035 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4b00c54-9ad1-49cc-a893-af751b7bbde3)
-    (property "Reference" "#PWR031" (at 232.41 29.845 0)
+    (property "Reference" "#PWR030" (at 232.41 29.845 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 232.41 22.225 0)
@@ -6775,7 +6775,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR079") (unit 1)
         )
       )
     )
@@ -6784,7 +6784,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 149.225 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f704d10e-8655-4a5a-b5e0-edb0e6e5d8f1)
-    (property "Reference" "R11" (at 152.4 81.28 90)
+    (property "Reference" "R12" (at 152.4 81.28 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 145.415 81.28 90)
@@ -6804,7 +6804,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "R11") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
     )
@@ -6813,7 +6813,7 @@
   (symbol (lib_id "power:GND") (at 81.915 189.865 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f72194f2-3049-45d5-95df-5326ff091d45)
-    (property "Reference" "#PWR010" (at 81.915 196.215 0)
+    (property "Reference" "#PWR080" (at 81.915 196.215 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 81.915 193.675 0)
@@ -6829,7 +6829,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -6861,7 +6861,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "C15") (unit 1)
+          (reference "C29") (unit 1)
         )
       )
     )
@@ -6870,7 +6870,7 @@
   (symbol (lib_id "power:+5V") (at 188.595 26.035 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fe596695-6d84-40dd-b76e-1fcf5d239d38)
-    (property "Reference" "#PWR027" (at 188.595 29.845 0)
+    (property "Reference" "#PWR024" (at 188.595 29.845 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 188.595 22.4305 0)
@@ -6886,7 +6886,7 @@
     (instances
       (project "clock_pcb"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/01b97287-a5a1-43d9-b0d4-094409706162"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR075") (unit 1)
         )
       )
     )
@@ -6895,7 +6895,7 @@
   (symbol (lib_id "Connector:TestPoint_Small") (at 234.95 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ff655976-5b9a-4df3-b248-ec9d8c8caf5e)
-    (property "Reference" "TP7" (at 235.585 33.02 0)
+    (property "Reference" "TP6" (at 235.585 33.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3V3" (at 236.093 34.8866 0)
