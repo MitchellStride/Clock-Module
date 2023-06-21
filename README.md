@@ -7,7 +7,7 @@ This module will be used craft artisan clocks by combining it with a seperate cl
 * Highly compatible with JLCPCB's basic SMT parts
 * Powered USBC with ESD and reverse polarity protection
 * DS1307Z+ RTC and CR2032 coin cell battery
-* Single sided design except for USBC and two buttons for a compact, flush mount.
+* Single sided design for a compact flush mount.
 * Photocell/LDR support for  for display autodimming
 * Additional features include piezoelectric buzzer, RGB LED, PWR switch, and optional OLED
 * FFC Expansion to support modular clock face
