@@ -1,4 +1,4 @@
-21599720373776554
+21606470274938721
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90069,6 +90069,13 @@ varistor
 2
 2
 silk
+battery
+
+
+0
+0
+0
+silk
 comb
 
 
@@ -90098,6 +90105,13 @@ subtitle
 0
 silk
 title
+
+
+0
+0
+0
+silk
+tv
 
 
 0
@@ -90173,6 +90187,20 @@ SSSS811101
 0
 7
 3
+stride_footprints
+SW_SPST_TL3342_LFT
+Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf
+SPST Tactile Switch
+0
+4
+2
+stride_footprints
+SW_SPST_TL3342_RT
+Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf
+SPST Tactile Switch
+0
+4
+2
 stride_footprints
 USB-C-16p
 
