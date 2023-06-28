@@ -1556,10 +1556,15 @@
         )
       )
     )
-    (model "${KICAD7_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step"
+    (model "${KICAD7_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step" hide
       (offset (xyz 3.75 -1.7 3.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 0 0))
+    )
+    (model "C:/projects/rp2040-clock/mechanical/models/USBCv2.step"
+      (offset (xyz -0.4 1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
     )
   )
 
