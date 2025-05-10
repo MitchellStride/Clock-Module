@@ -1,0 +1,26 @@
+Circuit: * C:\Users\stride\Documents\GitHub\Clock-Module\clock_pcb\sim\buzzer.asc
+
+Limiting rise time of source v3 to 2.5e-05
+Limiting fall time of source v3 to 2.5e-05
+WARNING: Less than two connections to node n002.  This node is used by v1.
+Instance "m:m1:2": Length shorter than recommended for a level 3 MOSFET.
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu May  8 12:45:15 2025
+Total elapsed time: 0.136 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3998
+traniter = 3992
+tranpoints = 1806
+accept = 1559
+rejected = 247
+matrix size = 12
+fillins = 0
+solver = Normal
+Avg thread counts: 2.5/4.2/4.3/2.5
+Matrix Compiler1: 552 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 818 bytes object code size  0.1/0.1/[0.1]
+
