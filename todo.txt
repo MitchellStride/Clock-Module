@@ -1,3 +1,6 @@
 software
 3dcad
    mcmaster part selection
+   
+issues
+-Holes disappeared from SSS switch footprint for some reason

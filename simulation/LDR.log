@@ -1,23 +1,24 @@
-Circuit: * C:\Users\mitch\projects\Death-Clock\clock_pcb\sim\LDR.asc
+Circuit: * C:\Users\stride\Documents\GitHub\Clock-Module\simulation\LDR.asc
 
 Limiting fall time of source v1 to 0.09997
-WARNING: Less than two connections to node 5V.  This node is used by V2.
+WARNING: Less than two connections to node 5v.  This node is used by v2.
 Direct Newton iteration for .op point succeeded.
 
-Date: Sun Aug 14 23:12:37 2022
-Total elapsed time: 0.049 seconds.
+Date: Mon May 12 16:16:22 2025
+Total elapsed time: 0.114 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2119
-traniter = 2116
-tranpoints = 1059
+totiter = 2123
+traniter = 2120
+tranpoints = 1061
 accept = 1056
-rejected = 3
+rejected = 5
 matrix size = 6
 fillins = 0
 solver = Normal
-Matrix Compiler1: 128 bytes object code size  0.0/0.0/[0.0]
-Matrix Compiler2: 326 bytes object code size  0.1/0.1/[0.0]
+Avg thread counts: 3.8/6.5/6.6/3.8
+Matrix Compiler1: 164 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.1/0.1
 
