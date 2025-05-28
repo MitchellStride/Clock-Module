@@ -1,6 +1,11 @@
+Label print for PCB
+tape for bright LEDs
+
 software
 3dcad
    mcmaster part selection
    
 issues
--Holes disappeared from SSS switch footprint for some reason
+-Holes disappeared from SSS slide pwr switch footprint for some reason
+-Silk On(|) and Off(O) are backwards, assembled it arrived in the ON state labeled (O)
+-Green LEDs are equal but too bright

@@ -1,0 +1,11 @@
+Insert while holding USB Boot, RP Drive should be connected.
+Download latest .uf2 file > https://micropython.org/download/rp2-pico/
+Drag and drop onto RP drive
+Should disappear as a usbdrive and reappear as a COM port
+
+Now we can run code temporaily
+Or boot as usbdrive and save it as main.py to autorun on boot
+Try name boot.py to have it run once before main.py
+
+VSCODE default is autoconnect which can interrupt running main.py so close or change this 
+	to have code run automatically
