@@ -22,9 +22,7 @@ A short list of various clocks I would like to build using this base module.
 * Life Clock: A countdown to estimated time of death using seven segment displays
 * Nixie Clock: My own take on the classic nixie tube clock using my favourite IN-12 tubes
 
-## Issues
-* Holes disappeared from SSS slide pwr switch footprint for some reason
-* Silk On(|) and Off(O) are backwards
+
 
 ## Notes
 * From 2024 when I did the schematic to 2025 when I did the layout I noticed jlc pcba changed a lot of their basic parts, and increased their extended reel fee from 1 to 3 dollars which increased cost a lot for small run asm. 

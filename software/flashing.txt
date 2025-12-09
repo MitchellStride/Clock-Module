@@ -3,9 +3,17 @@ Download latest .uf2 file > https://micropython.org/download/rp2-pico/
 Drag and drop onto RP drive
 Should disappear as a usbdrive and reappear as a COM port
 
-Now we can run code temporaily
+Now we can run code temporarily
 Or boot as usbdrive and save it as main.py to autorun on boot
 Try name boot.py to have it run once before main.py
+	This works better, on Thonny > Stop backend > Save As > Pico > main.py
+
 
 VSCODE default is autoconnect which can interrupt running main.py so close or change this 
 	to have code run automatically
+
+Or use thonny, set Tools > Interpreter > MicroPython (RP2040 or Pico)
+
+Uploading Custom Libs:
+Then don't usb boot, regular mount to COM3 etc. We need 2 upload any custom libs to the pi under /lib/example.py
+So on thonny do Tools > Manage Packages > Search or upload it there
