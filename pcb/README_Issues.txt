@@ -9,25 +9,24 @@
 * D1 D4 too bright
 * Soldering an OLED sucks, should use FFC Connector in the future
 * Needs a schematic note that ext switch only works when PCB switch if off or not GND, this could be better
-* Power conn needs to be bigger, 1A 5W per pin won't cut it.
 * Ext conns like the LDR should have a second fuse just in case
-* Silk on WS2812B-2020 got cut in fab for some reason
+* Silk on WS2812B-2020 got cut in fab for some reason, never got to test this part, fet may be to slow after simulation.
 * Add extended property or basic to BOM jlc_status
-* Adjust silk on CR2043 holder +/- 
-* put rtc address on schematic 110 1000 0x68
-* Make oled addr 0x3C clearer 011 1100 0x3C
-* RTC built was DS1302 not DS1307Z
+* Adjust silk on CR2032 holder +/- 
+* put rtc address on schematic 110 1000 R/W 0x68
+* Make oled addr 0x3C clearer 011 1100 R/W 0x3C
+* RTC built was DS1302 not DS1307Z , select a cheap non 5V part
 
 ## Add
 * Red PBAD LED
 * LDR THT Holes
-
+* different logic level shifter and RGBW LED?
 
 Extended Parts
 Fix these
 U2 SRV05-4-P-T7 ESD Diode, bom = 0 this one
 R31 20 ohms?
-Select new 0603 leds that are basic
+Select new 0603 leds that are basic, run them off 5v for good green
 
 Unselected Parts because I had them?
 D2 Zener and D5 WS2812B-2020
@@ -42,5 +41,5 @@ J4 5 6, SM02B-SRSS-TB(LF)(SN)
 Need
 USBC
 RP2040
-J3 FFC and 1.25 expensive
+J3 FFC and 1.25 expensive 
 

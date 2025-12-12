@@ -4,7 +4,7 @@
 [![Platform](https://img.shields.io/badge/platform-RP2040-blue)]() 
 [![License](https://img.shields.io/badge/license-CC_BY--NC--SA-lightgrey)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-![Clock Display](clock.png)
+![Clock Display](./images/clock.png)
 
 The **Hummingbird RP2040 Clock Module** is designed for crafting artisan clocks by pairing it with different clock faces. Its modular design allows this project to be shared across various display technologies.
 
@@ -46,9 +46,10 @@ Clocks I plan to build using this module:
 
 <details>
 <summary>Click to expand</summary>
-- Since I most
+
+- I had a few issues with the v1 hardware design since I completed it in roughly two days. Might do a v2.
 - From 2024 (schematic design) to 2025 (layout), JLC PCB assembly changed many basic components and increased extended reel fees from $1 → $3, significantly affecting small-run costs.
-- The cost per assembled PCB is approximately $8–10 USD, excluding setup fees. A total order of 2 PCBAs + 3 PCBs came to ~$57 + ~$17 shipping. After discounts, the total spent was ~$70 USD, plus $10–20 for extra parts from LCSC or Digikey. The largest expense was reel fees ($30).  
+- The cost per assembled PCB is approximately $8–10 USD, excluding setup fees. A total order of 2 PCBAs + 3 PCBs came to ~$57 + ~$17 shipping. After discounts, the total spent was ~$70 USD, plus $10–20 for extra parts from LCSC or Digikey. The largest expense was reel fees ($30).
 
 See: -> ./images/cost2.png
 
