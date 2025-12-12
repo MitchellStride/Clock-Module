@@ -4,16 +4,11 @@
 [![Platform](https://img.shields.io/badge/platform-RP2040-blue)]() 
 [![License](https://img.shields.io/badge/license-CC_BY--NC--SA-lightgrey)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-![Clock Display](./images/clock.png)
-
 The **Hummingbird RP2040 Clock Module** is designed for crafting artisan clocks by pairing it with different clock faces. Its modular design allows this project to be shared across various display technologies.
 
----
+![Clock Display](./images/clock.png)
 
-## 📦 Status
-> The PCBA has arrived, and is working, it needed one bodge. FW is done.
-
-![Front and back PCB](./images/FB_PCB.png)
+The test OLED above shows time, my age, and my time to death countdown based on my life expectancy.
 
 ---
 
@@ -29,6 +24,13 @@ The **Hummingbird RP2040 Clock Module** is designed for crafting artisan clocks 
 
 ---
 
+## 📦 Status
+> The PCBA has arrived, and is working, it needed one bodge. FW is done.
+
+![Front and back PCB](./images/FB_PCB.png)
+
+---
+
 ## 💡 Clock Ideas
 Clocks I plan to build using this module:
 
@@ -37,6 +39,7 @@ Clocks I plan to build using this module:
 
 - **Life Clock:** A countdown to estimated time of death using seven-segment displays
 - **Nixie Clock:** A personal take on the classic Nixie tube clock, featuring IN-12 tubes
+- **0402 Year Calendar** Inspired by the Yetch THE EVERY DAY GOAL CALENDAR
 
 </details>
 
