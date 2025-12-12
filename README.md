@@ -3,6 +3,8 @@
 [![Status](https://img.shields.io/badge/status-complete-brightgreen)]() 
 [![Platform](https://img.shields.io/badge/platform-RP2040-blue)]() 
 [![License](https://img.shields.io/badge/license-CC_BY--NC--SA-lightgrey)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![RP2040](https://img.shields.io/badge/microcontroller-RP2040-blue)]() 
+[![MicroPython](https://img.shields.io/badge/language-MicroPython-ff69b4)]() 
 
 The **Hummingbird RP2040 Clock Module** is designed for crafting artisan clocks by pairing it with different clock faces. Its modular design allows this project to be shared across various display technologies.
 
