@@ -2,7 +2,7 @@
 PROGRAM NAME:   main.py
 PROGRAMMER:     M. STRIDE, 2025 11 28
 DESCRIPTION:    Firmware for clock PCB.
-TODO:           
+TODO:           Note clock is free run updates not based on RTC SQWV
 BUGS:           
 ***********************************************************"""
 #---------------------------LIBS-----------------------------------
@@ -28,6 +28,7 @@ piezo.duty_u16(0)
 #I2C
 i2c0 = machine.I2C(0, sda=machine.Pin(16), scl=machine.Pin(17), freq=400000)
 oled = ssd1306.SSD1306_I2C(width=128, height=64, i2c=i2c0, addr=0x3C)
+DS1307_ADDR = 0x68
 
 #GLOBAL VARS
 adc_conversion_factor = 3.3 / (65535)
@@ -35,6 +36,9 @@ adc_conversion_factor = 3.3 / (65535)
 last_sw4 = 0
 last_sw5 = 0
 DEBOUNCE_MS = 200   # ignore presses within 200 ms
+RTC=False
+MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 
 #---------------------------FUNCTIONS-----------------------------------
 def read_temp():
@@ -56,13 +60,29 @@ def oled_setup():
     oled_rst.high()
     utime.sleep(0.1)
 
+def oled_text_center(text, y):
+    # Calculate start x to center text
+    x = (128 - len(text) * 8) // 2
+    oled.text(text, x, y)
+
 def refresh_oled(t):
     #oled_pixel_check()
     oled.fill(0)   #clears screen
-    oled.text("---Clock PCB---", 2, 0)
-    oled.text(f"RP2040 Die:{read_temp():.1f}C", 0, 10)
+    oled_text_center("---Clock PCB---", 0)
+    oled.text(f"RP2040 Die:{read_temp():.1f}C", 0, 9*1)
     volt, light_class = read_LDR()
-    oled.text(f"LDR:{volt:.2f}V, {light_class}", 0, 20)
+    oled.text(f"LDR:{volt:.2f}V, {light_class}", 0, 9*2)
+    if RTC:
+        year, month, day, hour, minute, second, hour_12, ampm = read_time()
+        month_str = MONTHS[month-1]           # Convert month number to 3-letter abbreviation
+        oled_text_center(f"{year} {month_str} {day:02}", 9*3)
+        oled_text_center(f"{hour_12:02}:{minute:02}:{second:02} {ampm}", 9*4)    #:02 pads leading zeros to ensure 2 dig
+                # ---- Death clock bottom two lines ----
+        d1, d2 = death_countdown(year, month, day, hour, minute, second)
+        oled_text_center(d1, 9*5)   # Years and days
+        oled_text_center(d2, 9*6)   # Hours, minutes, seconds
+    else:
+        oled.text(f"No RTC", 0, 30)
     oled.show()
 
 # Timer callback toggles LED
@@ -104,12 +124,63 @@ def button_SW4_pressed(pin):   #ISR
 def button_SW5_pressed(pin):   #ISR, no SW deboucing
     print("SW5 Pressed!")
 
+#RTC Code
+def bcd2dec(val):
+    return (val // 16) * 10 + (val % 16)
 
+def to_12h(hour):
+    if hour == 0: return 12, "AM"
+    if hour < 12: return hour, "AM"
+    if hour == 12: return 12, "PM"
+    return hour - 12, "PM"
+
+def read_time():
+    data = i2c0.readfrom_mem(DS1307_ADDR, 0x00, 7)
+    second = bcd2dec(data[0] & 0x7F)
+    minute = bcd2dec(data[1])
+    hour   = bcd2dec(data[2])
+    day    = bcd2dec(data[4])
+    month  = bcd2dec(data[5])
+    year   = bcd2dec(data[6]) + 2000
+
+    hour_12, ampm = to_12h(hour)
+    
+    return (year, month, day, hour, minute, second, hour_12, ampm)
+
+def RTC_FUNCTIONAL():
+    global RTC
+    if DS1307_ADDR in i2c0.scan():
+        print("DS1307 RTC detected!")
+        RTC=True
+    else:
+        print("DS1307 RTC not found!")
+        RTC=False
+
+def death_countdown(year, month, day, hour, minute, second):
+    death_year, death_month, death_day = 2077, 3, 1
+
+    now = utime.mktime((year, month, day, hour, minute, second, 0, 0))
+    target = utime.mktime((death_year, death_month, death_day, 0, 0, 0, 0, 0))
+    diff = target - now
+    if diff < 0:
+        return ("EXPIRED", "")
+
+    total_days = diff // 86400
+    years_left = total_days // 365
+    days = total_days % 365
+    hours = (diff % 86400) // 3600
+    minutes = (diff % 3600) // 60
+    seconds = diff % 60
+
+    line1 = f"{years_left}y {days}d"
+    line2 = f"{hours:02}h {minutes:02}m {seconds:02}s"
+    return line1, line2
 
 #---------------------------MAIN-----------------------------------
 def main():
     utime.sleep(0.5)   #wait for serial terminal
     print("Clock PCB SW")
+    RTC_FUNCTIONAL()
 
     # Create timer, period = 1000 ms (1 second)
     timer = Timer()
@@ -130,6 +201,12 @@ def main():
     beep()
     piezo.duty_u16(0) 
 
+    while True:
+        if RTC:
+            print(read_time())
+        else:
+            print("DS1307 RTC not found!")
+        utime.sleep(10) 
     #Turn OFF everything but LED toggle
     #timer1.deinit()
     #oled_off()
