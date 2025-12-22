@@ -1,0 +1,22 @@
+JLC Cost Notes
+
+Cost https://jlcpcb.com/help/article/pcb-assembly-price
+PCBA Type	Economic PCBA	Standard PCBA
+Setup fee	$8		$25/Single-side
+				$50/Double-side
+Stencil also 	1.50 		vs 8
+Feeders Fee	$3/ Extended	$1.5 basic/Extended
+
+Economic Limits
+Single sided placement (SMT/Thru-hole) 2,4,6-layers
+Minimum Package 0402
+Minimum IC Pin Spacing 0.4mm vs 0.35mm
+Minimum BGA Spacing 0.5mm(center to center) vs 0.35mm(center to center)
+
+
+SolderMask Colors https://jlcpcb.com/capabilities/pcb-assembly-capabilities
+2L, All
+4L, Green
+
+2L, Any color, Single Side
+4L, Green Single Sided, is a great value choice

@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "silk")(type "KiCad")(uri "${KIPRJMOD}/img/silk")(options "")(descr ""))
+  (lib (name "ftp")(type "KiCad")(uri "C:/Users/stride/Documents/GitHub/Clock-Module/clock_pcb/ftp.pretty")(options "")(descr ""))
+  (lib (name "Library_local")(type "KiCad")(uri "C:/Users/stride/Documents/GitHub/Clock-Module/clock_pcb/ftp/Library_local.pretty")(options "")(descr ""))
+)
