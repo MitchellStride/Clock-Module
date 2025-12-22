@@ -530,7 +530,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e8cbfbd-06a2-4a0e-b33e-a271c6ab53b8")
-		(property "Reference" "H8"
+		(property "Reference" "H1"
 			(at 320.04 230.2315 0)
 			(effects
 				(font
@@ -587,7 +587,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H8")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -603,7 +603,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25fc7484-491e-43e0-bd7c-d028fb2ba319")
-		(property "Reference" "H14"
+		(property "Reference" "H7"
 			(at 360.68 236.064 0)
 			(effects
 				(font
@@ -660,7 +660,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H14")
+					(reference "H7")
 					(unit 1)
 				)
 			)
@@ -673,9 +673,9 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "39cfb7b2-154d-4346-9c1b-d5928068b862")
-		(property "Reference" "TP8"
+		(property "Reference" "TP1"
 			(at 372.745 228.6 90)
 			(effects
 				(font
@@ -726,13 +726,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Status" "Extended"
+			(at 376.555 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d97d7bfc-1fd0-4e94-ae98-9af066c8b9fb")
 		)
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "TP8")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -747,7 +756,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5d3b4c1e-95f0-402b-87d3-ef21132bc00d")
-		(property "Reference" "H11"
+		(property "Reference" "H4"
 			(at 352.425 231.775 0)
 			(effects
 				(font
@@ -804,7 +813,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H11")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -820,7 +829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5dc139cf-0dab-4548-b293-89093d22db7d")
-		(property "Reference" "H13"
+		(property "Reference" "H6"
 			(at 360.68 231.619 0)
 			(effects
 				(font
@@ -877,7 +886,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H13")
+					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -893,7 +902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "691b6300-0623-45ef-8313-c382d7c7ab29")
-		(property "Reference" "FID3"
+		(property "Reference" "FID1"
 			(at 338.709 230.2315 0)
 			(effects
 				(font
@@ -950,7 +959,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "FID3")
+					(reference "FID1")
 					(unit 1)
 				)
 			)
@@ -966,7 +975,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ea15db2-aef0-44bf-be20-a7cd93ef8830")
-		(property "Reference" "H12"
+		(property "Reference" "H5"
 			(at 352.425 236.064 0)
 			(effects
 				(font
@@ -1023,7 +1032,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H12")
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -1039,7 +1048,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a01221dc-2da8-4880-b0f8-73a2a9f7cbb6")
-		(property "Reference" "H10"
+		(property "Reference" "H3"
 			(at 327.66 230.2315 0)
 			(effects
 				(font
@@ -1096,7 +1105,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H10")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -1112,7 +1121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9d127b6-157b-4bab-9416-cc3fa48eb8b2")
-		(property "Reference" "H9"
+		(property "Reference" "H2"
 			(at 320.04 234.6765 0)
 			(effects
 				(font
@@ -1169,7 +1178,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H9")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -1185,7 +1194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df6b514b-070c-4101-bc59-e78e33435b5a")
-		(property "Reference" "FID4"
+		(property "Reference" "FID2"
 			(at 338.709 234.6765 0)
 			(effects
 				(font
@@ -1242,7 +1251,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "FID4")
+					(reference "FID2")
 					(unit 1)
 				)
 			)
@@ -1257,7 +1266,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f72194f2-3049-45d5-95df-5326ff091d45")
-		(property "Reference" "#PWR0138"
+		(property "Reference" "#PWR01"
 			(at 382.27 239.395 0)
 			(effects
 				(font
@@ -1306,7 +1315,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "#PWR0138")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)

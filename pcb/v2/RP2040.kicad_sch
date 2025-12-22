@@ -3986,15 +3986,20 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AP2112K-3.3"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "Regulator_Linear:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -5.08 5.715 0)
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AMS1117-3.3"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4002,17 +4007,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "AP2112K-3.3"
-				(at 0 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 0 8.255 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4020,8 +4016,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-				(at 0 2.54 0)
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4029,7 +4025,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
+			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4047,7 +4043,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23?5*"
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4056,10 +4052,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "AP2112K-3.3_0_1"
+			(symbol "AMS1117-3.3_0_1"
 				(rectangle
-					(start -5.08 4.445)
-					(end 5.08 -5.08)
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -4069,29 +4065,11 @@
 					)
 				)
 			)
-			(symbol "AP2112K-3.3_1_1"
+			(symbol "AMS1117-3.3_1_1"
 				(pin power_in line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "EN"
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4116,26 +4094,7 @@
 							)
 						)
 					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4144,16 +4103,16 @@
 					)
 				)
 				(pin power_out line
-					(at 7.62 2.54 180)
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "VOUT"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5898,7 +5857,7 @@
 	)
 	(text "3V3"
 		(exclude_from_sim no)
-		(at 311.785 29.845 0)
+		(at 326.39 26.67 0)
 		(effects
 			(font
 				(size 2 2)
@@ -5966,7 +5925,7 @@
 	)
 	(text "RP Protection w/ SW"
 		(exclude_from_sim no)
-		(at 241.935 29.845 0)
+		(at 238.76 26.924 0)
 		(effects
 			(font
 				(size 2 2)
@@ -6001,7 +5960,7 @@
 	)
 	(text "ESD"
 		(exclude_from_sim no)
-		(at 193.04 31.242 0)
+		(at 189.23 26.416 0)
 		(effects
 			(font
 				(size 2 2)
@@ -6150,9 +6109,9 @@
 		)
 		(uuid "ad60574d-8881-49a4-a8ec-832e7b2e2ab2")
 	)
-	(text "600mA Max"
+	(text "1A Max"
 		(exclude_from_sim no)
-		(at 333.375 38.1 0)
+		(at 340.36 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6174,7 +6133,7 @@
 	)
 	(text "USER LED\n"
 		(exclude_from_sim no)
-		(at 104.14 204.47 0)
+		(at 223.012 200.152 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6185,7 +6144,7 @@
 	)
 	(text "PBAD or SW-OFF LED"
 		(exclude_from_sim no)
-		(at 111.252 23.368 0)
+		(at 109.22 25.4 0)
 		(effects
 			(font
 				(size 2 2)
@@ -6232,6 +6191,12 @@
 		(uuid "f0e65a60-43af-45fa-a820-4088a3134a4e")
 	)
 	(junction
+		(at 306.07 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00017cd7-82d9-40e9-a110-4f07337d6de1")
+	)
+	(junction
 		(at 249.555 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6260,6 +6225,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18f81379-b740-47db-915b-1831c4598be9")
+	)
+	(junction
+		(at 306.07 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ab1ebc2-3aa7-4c8f-bb2d-8066c752d40b")
 	)
 	(junction
 		(at 49.53 48.26)
@@ -6292,10 +6263,16 @@
 		(uuid "296adb1b-e931-44f5-b0eb-480f777d5547")
 	)
 	(junction
-		(at 359.41 55.88)
+		(at 374.65 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ca58b33-ae55-43d7-943a-cdad6d334998")
+	)
+	(junction
+		(at 351.79 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cd31818-1167-432d-86dc-f73655379408")
 	)
 	(junction
 		(at 49.53 45.72)
@@ -6310,16 +6287,16 @@
 		(uuid "3810a028-03b2-4384-8aa9-fc469adcc957")
 	)
 	(junction
-		(at 309.245 38.735)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3828845b-85a6-4ec7-badf-afc34b0893bb")
-	)
-	(junction
 		(at 135.89 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "387522e6-ad35-43a3-8477-88bca1853ffc")
+	)
+	(junction
+		(at 313.69 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ae20dd4-447c-4c75-af1f-09433e750110")
 	)
 	(junction
 		(at 142.24 119.38)
@@ -6362,6 +6339,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6762bc66-d699-4a19-b39f-5a373ba0c22b")
+	)
+	(junction
+		(at 356.87 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "690bc912-6597-4d5c-b150-ee63b891aeb1")
 	)
 	(junction
 		(at 302.26 123.19)
@@ -6424,12 +6407,6 @@
 		(uuid "8eb8af48-706a-459f-bd94-5fdad7ee8e3b")
 	)
 	(junction
-		(at 346.71 38.735)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8f90054b-0796-45de-8c0e-d2f67e09783d")
-	)
-	(junction
 		(at 123.19 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6466,12 +6443,6 @@
 		(uuid "b22df6d9-24b7-4174-9c04-71c045be43cb")
 	)
 	(junction
-		(at 335.915 38.735)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b238b697-aa1a-48c1-94dc-f87c7c856aeb")
-	)
-	(junction
 		(at 129.54 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6482,6 +6453,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b97296e1-d4ec-4371-ae2a-5b932ce9ea8c")
+	)
+	(junction
+		(at 342.9 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0ca9a12-3d21-42b3-aeb4-5a3e113e83dc")
 	)
 	(junction
 		(at 110.49 119.38)
@@ -6500,12 +6477,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c36288dd-8ae8-46f4-b2f6-ff4fb395653d")
-	)
-	(junction
-		(at 302.895 38.735)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c5199b2a-7836-4823-8d6e-f7c9b66b7e88")
 	)
 	(junction
 		(at 302.26 135.89)
@@ -6560,7 +6531,7 @@
 		(uuid "061ac749-c68b-4889-8117-91f457f70800")
 	)
 	(no_connect
-		(at 218.44 53.34)
+		(at 205.74 54.61)
 		(uuid "80349999-aa1a-45e8-af88-1786edb6e95e")
 	)
 	(no_connect
@@ -6568,7 +6539,7 @@
 		(uuid "e034c255-51be-46d1-b38d-6383afcd4315")
 	)
 	(no_connect
-		(at 218.44 48.26)
+		(at 205.74 49.53)
 		(uuid "e6f1f2c6-7eec-4e54-a350-56f640b3622f")
 	)
 	(no_connect
@@ -6647,7 +6618,7 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 52.07) (xy 359.41 55.88)
+			(xy 374.65 52.07) (xy 374.65 55.88)
 		)
 		(stroke
 			(width 0)
@@ -6737,7 +6708,7 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 43.18) (xy 359.41 46.99)
+			(xy 374.65 43.18) (xy 374.65 46.99)
 		)
 		(stroke
 			(width 0)
@@ -6754,6 +6725,16 @@
 			(type default)
 		)
 		(uuid "18b24ad6-79f1-43f4-8bbd-d137169d2d55")
+	)
+	(wire
+		(pts
+			(xy 342.9 38.1) (xy 342.9 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bf9b3a3-f53c-4d8a-82ac-70b21b1519fd")
 	)
 	(wire
 		(pts
@@ -6784,6 +6765,16 @@
 			(type default)
 		)
 		(uuid "1d0fbd67-8aa3-4b9d-a687-a74e57f4bea9")
+	)
+	(wire
+		(pts
+			(xy 342.9 38.1) (xy 351.79 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d5525b1-f224-40be-ad46-eb2248850099")
 	)
 	(wire
 		(pts
@@ -6827,7 +6818,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 121.92) (xy 237.49 120.65)
+			(xy 240.03 121.92) (xy 240.03 120.65)
 		)
 		(stroke
 			(width 0)
@@ -6887,7 +6878,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 63.5) (xy 205.74 64.77)
+			(xy 193.04 64.77) (xy 193.04 66.04)
 		)
 		(stroke
 			(width 0)
@@ -6897,7 +6888,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.205 208.28) (xy 109.22 208.28)
+			(xy 229.87 201.93) (xy 236.855 201.93)
 		)
 		(stroke
 			(width 0)
@@ -6917,7 +6908,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 60.96) (xy 370.84 64.77)
+			(xy 386.08 60.96) (xy 386.08 64.77)
 		)
 		(stroke
 			(width 0)
@@ -6927,7 +6918,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 35.56) (xy 205.74 38.1)
+			(xy 193.04 36.83) (xy 193.04 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6977,7 +6968,7 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 55.88) (xy 359.41 58.42)
+			(xy 374.65 55.88) (xy 374.65 58.42)
 		)
 		(stroke
 			(width 0)
@@ -6997,7 +6988,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 53.34) (xy 193.04 53.34)
+			(xy 170.18 54.61) (xy 180.34 54.61)
 		)
 		(stroke
 			(width 0)
@@ -7147,13 +7138,13 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 160.655) (xy 97.79 158.75)
+			(xy 351.79 38.1) (xy 356.87 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39ded359-0fe5-4537-a84d-5a5662617387")
+		(uuid "3a484c7a-efab-4437-9dba-302d4a69cece")
 	)
 	(wire
 		(pts
@@ -7164,16 +7155,6 @@
 			(type default)
 		)
 		(uuid "3af3e521-42f6-44d3-afe0-216b26a54ff6")
-	)
-	(wire
-		(pts
-			(xy 310.515 38.735) (xy 309.245 38.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b0c78a4-701f-4179-829a-fa8f7f3941ac")
 	)
 	(wire
 		(pts
@@ -7214,16 +7195,6 @@
 			(type default)
 		)
 		(uuid "3e0d8c50-2b57-4e05-a341-3ea74767587c")
-	)
-	(wire
-		(pts
-			(xy 309.245 38.735) (xy 302.895 38.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f35f969-08b0-4370-ad04-8491aa73c3b8")
 	)
 	(wire
 		(pts
@@ -7347,6 +7318,16 @@
 	)
 	(wire
 		(pts
+			(xy 306.07 46.99) (xy 306.07 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ad9220d-e8ce-4e0f-9c93-566f3f0098de")
+	)
+	(wire
+		(pts
 			(xy 142.24 119.38) (xy 142.24 120.65)
 		)
 		(stroke
@@ -7387,13 +7368,13 @@
 	)
 	(wire
 		(pts
-			(xy 335.915 38.735) (xy 335.915 41.91)
+			(xy 306.07 38.1) (xy 306.07 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5063ac08-e69c-4429-9106-d34ca9c9c092")
+		(uuid "5064a58a-58cc-44d3-a412-648d49edfe65")
 	)
 	(wire
 		(pts
@@ -7437,7 +7418,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 39.37) (xy 370.84 43.18)
+			(xy 386.08 39.37) (xy 386.08 43.18)
 		)
 		(stroke
 			(width 0)
@@ -7477,16 +7458,6 @@
 	)
 	(wire
 		(pts
-			(xy 335.915 38.735) (xy 346.71 38.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "597d5f7c-975f-429f-8b16-afe914f23802")
-	)
-	(wire
-		(pts
 			(xy 181.61 179.07) (xy 210.185 179.07)
 		)
 		(stroke
@@ -7514,6 +7485,16 @@
 			(type default)
 		)
 		(uuid "5b7d3019-ed5f-4b1c-a7c8-29f42cd7db4a")
+	)
+	(wire
+		(pts
+			(xy 97.79 158.75) (xy 97.79 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5baf15fa-29fa-4b97-94f8-a26afe599079")
 	)
 	(wire
 		(pts
@@ -7587,7 +7568,7 @@
 	)
 	(wire
 		(pts
-			(xy 302.895 46.355) (xy 302.895 48.895)
+			(xy 313.69 45.72) (xy 313.69 46.99)
 		)
 		(stroke
 			(width 0)
@@ -7707,7 +7688,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 48.26) (xy 193.04 48.26)
+			(xy 170.18 49.53) (xy 180.34 49.53)
 		)
 		(stroke
 			(width 0)
@@ -7747,7 +7728,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 41.91) (xy 346.71 41.91)
+			(xy 359.41 38.1) (xy 356.87 38.1)
 		)
 		(stroke
 			(width 0)
@@ -7867,7 +7848,7 @@
 	)
 	(wire
 		(pts
-			(xy 302.895 34.925) (xy 302.895 38.735)
+			(xy 306.07 34.29) (xy 306.07 38.1)
 		)
 		(stroke
 			(width 0)
@@ -7897,7 +7878,7 @@
 	)
 	(wire
 		(pts
-			(xy 318.135 48.895) (xy 318.135 50.165)
+			(xy 326.39 45.72) (xy 326.39 46.99)
 		)
 		(stroke
 			(width 0)
@@ -7947,23 +7928,13 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 201.93) (xy 197.485 201.93)
+			(xy 181.61 201.93) (xy 224.79 201.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "816473bc-b887-4b6f-8718-1a8d2ab623ed")
-	)
-	(wire
-		(pts
-			(xy 121.285 208.28) (xy 139.065 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "826580be-bee6-4f95-9faa-4ad11c648e46")
 	)
 	(wire
 		(pts
@@ -7977,7 +7948,7 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 63.5) (xy 359.41 64.77)
+			(xy 374.65 63.5) (xy 374.65 64.77)
 		)
 		(stroke
 			(width 0)
@@ -8007,7 +7978,7 @@
 	)
 	(wire
 		(pts
-			(xy 346.71 38.735) (xy 346.71 41.91)
+			(xy 356.87 33.655) (xy 356.87 38.1)
 		)
 		(stroke
 			(width 0)
@@ -8057,7 +8028,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 31.75) (xy 370.84 34.29)
+			(xy 386.08 31.75) (xy 386.08 34.29)
 		)
 		(stroke
 			(width 0)
@@ -8074,16 +8045,6 @@
 			(type default)
 		)
 		(uuid "89c40377-a59d-48aa-8cf0-da3bcfe7a5e5")
-	)
-	(wire
-		(pts
-			(xy 309.245 41.275) (xy 309.245 38.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a057ad2-4430-49ad-8b8f-2731e9038e77")
 	)
 	(wire
 		(pts
@@ -8237,7 +8198,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 208.28) (xy 101.6 208.28)
+			(xy 241.935 201.93) (xy 247.015 201.93)
 		)
 		(stroke
 			(width 0)
@@ -8327,7 +8288,7 @@
 	)
 	(wire
 		(pts
-			(xy 206.375 120.65) (xy 222.885 120.65)
+			(xy 206.375 120.65) (xy 224.79 120.65)
 		)
 		(stroke
 			(width 0)
@@ -8347,7 +8308,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.755 38.735) (xy 335.915 38.735)
+			(xy 334.01 38.1) (xy 342.9 38.1)
 		)
 		(stroke
 			(width 0)
@@ -8477,16 +8438,6 @@
 	)
 	(wire
 		(pts
-			(xy 310.515 41.275) (xy 309.245 41.275)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3133ea9-1ad5-4f4f-a50d-c2152ad4c33c")
-	)
-	(wire
-		(pts
 			(xy 48.26 45.72) (xy 49.53 45.72)
 		)
 		(stroke
@@ -8494,16 +8445,6 @@
 			(type default)
 		)
 		(uuid "b477c692-d69e-492a-aa92-9273997954c7")
-	)
-	(wire
-		(pts
-			(xy 237.49 120.65) (xy 233.045 120.65)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "b5773e3e-2128-464a-8192-5e86023b1350")
 	)
 	(wire
 		(pts
@@ -8557,6 +8498,26 @@
 	)
 	(wire
 		(pts
+			(xy 306.07 46.99) (xy 313.69 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdad1e2e-5d1c-48e1-9797-9c9910220ef8")
+	)
+	(wire
+		(pts
+			(xy 351.79 45.72) (xy 351.79 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdd07373-803e-4012-9a4a-5ccbbfadc473")
+	)
+	(wire
+		(pts
 			(xy 271.145 194.945) (xy 282.575 194.945)
 		)
 		(stroke
@@ -8584,6 +8545,16 @@
 			(type default)
 		)
 		(uuid "bff236d6-44a7-4989-92b3-60054340074f")
+	)
+	(wire
+		(pts
+			(xy 313.69 38.1) (xy 318.77 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c11846a8-8bb9-476f-bfb8-541af8461ade")
 	)
 	(wire
 		(pts
@@ -8677,7 +8648,7 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 55.88) (xy 363.22 55.88)
+			(xy 374.65 55.88) (xy 378.46 55.88)
 		)
 		(stroke
 			(width 0)
@@ -8787,6 +8758,16 @@
 	)
 	(wire
 		(pts
+			(xy 351.79 38.1) (xy 351.79 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d16f4474-3cb0-40ee-a3c3-1f234d90ec71")
+	)
+	(wire
+		(pts
 			(xy 91.44 120.65) (xy 91.44 119.38)
 		)
 		(stroke
@@ -8827,7 +8808,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 172.085) (xy 97.79 170.815)
+			(xy 97.79 170.18) (xy 97.79 172.085)
 		)
 		(stroke
 			(width 0)
@@ -8847,7 +8828,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.915 46.99) (xy 335.915 49.53)
+			(xy 342.9 45.72) (xy 342.9 48.26)
 		)
 		(stroke
 			(width 0)
@@ -8894,6 +8875,26 @@
 			(type default)
 		)
 		(uuid "d7437845-9572-41dd-b9b9-322f417bf953")
+	)
+	(wire
+		(pts
+			(xy 306.07 45.72) (xy 306.07 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7e500fd-2244-4b54-b88f-776aec75f318")
+	)
+	(wire
+		(pts
+			(xy 234.95 120.65) (xy 240.03 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc1e23e4-7a94-457c-95b0-1666d90c8a60")
 	)
 	(wire
 		(pts
@@ -8987,7 +8988,7 @@
 	)
 	(wire
 		(pts
-			(xy 302.895 38.735) (xy 302.895 41.275)
+			(xy 313.69 38.1) (xy 313.69 40.64)
 		)
 		(stroke
 			(width 0)
@@ -9067,6 +9068,16 @@
 	)
 	(wire
 		(pts
+			(xy 306.07 38.1) (xy 313.69 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb115703-540c-4e2d-8439-32b35478c84d")
+	)
+	(wire
+		(pts
 			(xy 135.89 127) (xy 129.54 127)
 		)
 		(stroke
@@ -9087,7 +9098,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 208.28) (xy 101.6 210.185)
+			(xy 247.015 201.93) (xy 247.015 205.105)
 		)
 		(stroke
 			(width 0)
@@ -9157,16 +9168,6 @@
 	)
 	(wire
 		(pts
-			(xy 346.71 34.925) (xy 346.71 38.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa6312af-02b8-4776-9f28-131f8f8d08cc")
-	)
-	(wire
-		(pts
 			(xy 97.79 158.75) (xy 100.33 158.75)
 		)
 		(stroke
@@ -9197,7 +9198,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 48.26) (xy 370.84 50.8)
+			(xy 386.08 48.26) (xy 386.08 50.8)
 		)
 		(stroke
 			(width 0)
@@ -9276,7 +9277,7 @@
 		(uuid "1350e99e-3bb1-4b60-b82f-b6d1ca872717")
 	)
 	(label "USB_D-"
-		(at 182.88 48.26 0)
+		(at 170.18 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9535,6 +9536,16 @@
 		)
 		(uuid "b2cdbd18-6517-4ad5-a49c-d3ec1ed82088")
 	)
+	(label "test"
+		(at 49.53 35.56 0)
+		(effects
+			(font
+				(size 0.127 0.127)
+			)
+			(justify left bottom)
+		)
+		(uuid "c45579ea-554e-43b8-9e60-757803c6a8ae")
+	)
 	(label "~{QSPI_CS}"
 		(at 182.88 120.65 0)
 		(effects
@@ -9566,7 +9577,7 @@
 		(uuid "cc15126e-7641-4d8f-ae27-0d791ce87b8d")
 	)
 	(label "USB_D+"
-		(at 182.88 53.34 0)
+		(at 170.18 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9584,16 +9595,6 @@
 			(justify right bottom)
 		)
 		(uuid "dc2975c3-f209-4e5d-a1ff-7499b6167622")
-	)
-	(label "GPIO25_LED"
-		(at 139.065 208.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e188e040-9c79-4692-9afb-e1e3e323b983")
 	)
 	(label "GPIO25_LED"
 		(at 197.485 201.93 180)
@@ -9753,7 +9754,7 @@
 		)
 		(uuid "28710022-67d0-497f-af53-2ff305b84816")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.4162 161.2275 0)
+			(at 199.8665 161.29 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10212,7 +10213,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04fbd1b4-b961-4ee3-a8ec-6244bf52aa64")
-		(property "Reference" "R47"
+		(property "Reference" "R6"
 			(at 113.665 151.765 0)
 			(effects
 				(font
@@ -10281,7 +10282,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R47")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -10297,7 +10298,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0534c13f-eef7-4df5-ae52-7fd147ec48c4")
-		(property "Reference" "#PWR0161"
+		(property "Reference" "#PWR033"
 			(at 302.26 125.73 0)
 			(effects
 				(font
@@ -10346,7 +10347,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0161")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -10361,7 +10362,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "055cb9c3-9c02-4509-991f-7125717397e7")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR018"
 			(at 143.51 73.66 0)
 			(effects
 				(font
@@ -10410,7 +10411,71 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR06")
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 351.79 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0611f851-c111-4112-b449-9582b1443a47")
+		(property "Reference" "#PWR041"
+			(at 351.79 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 351.79 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 351.79 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 351.79 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "79c19900-1d2d-490b-ae19-a3706d48da23")
+		)
+		(instances
+			(project "clock_module_v2.0"
+				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -10425,7 +10490,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0696fcaf-6ba0-4e7d-8142-0f4b074d9942")
-		(property "Reference" "C57"
+		(property "Reference" "C9"
 			(at 130.302 121.412 0)
 			(effects
 				(font
@@ -10497,7 +10562,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C57")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -10512,7 +10577,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "06c47154-d692-4889-afed-d9df5f0603d5")
-		(property "Reference" "#PWR0145"
+		(property "Reference" "#PWR020"
 			(at 149.86 121.92 0)
 			(effects
 				(font
@@ -10561,7 +10626,94 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0145")
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 97.79 165.1 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07bf3580-1112-42ca-ba21-0ea80ba0aa11")
+		(property "Reference" "SW1"
+			(at 92.71 161.798 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TS-1187A-B-A-B"
+			(at 93.6776 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
+			(at 92.71 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.79 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C720477"
+			(at 97.79 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Status" "Basic"
+			(at 97.79 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63af3806-df91-41bd-ba38-314ef22bc040")
+		)
+		(pin "2"
+			(uuid "257ff381-5380-4a1c-83bb-358fb450477b")
+		)
+		(instances
+			(project "clock_module_v2.0"
+				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -10577,7 +10729,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08d4ac08-d15b-4806-b53b-ba62651881c1")
-		(property "Reference" "#PWR0163"
+		(property "Reference" "#PWR037"
 			(at 307.34 174.625 0)
 			(effects
 				(font
@@ -10626,7 +10778,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0163")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -10642,7 +10794,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b383e54-8c65-4e4e-a7cf-ed3cd360e1cd")
-		(property "Reference" "#PWR0153"
+		(property "Reference" "#PWR027"
 			(at 241.935 179.07 0)
 			(effects
 				(font
@@ -10691,7 +10843,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0153")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -10706,7 +10858,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0c62f972-d42c-460a-803d-531c11d7a151")
-		(property "Reference" "#PWR0134"
+		(property "Reference" "#PWR010"
 			(at 111.125 175.26 0)
 			(effects
 				(font
@@ -10755,7 +10907,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0134")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -10770,7 +10922,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0d9dd923-49fb-416b-8db8-810fe8ed1f6e")
-		(property "Reference" "R3"
+		(property "Reference" "R8"
 			(at 134.62 62.23 0)
 			(effects
 				(font
@@ -10839,7 +10991,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R3")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -10847,15 +10999,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 370.84 64.77 0)
+		(at 386.08 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0e01e718-b044-440e-9dff-d971bc47f96f")
-		(property "Reference" "#PWR09"
-			(at 370.84 71.12 0)
+		(property "Reference" "#PWR046"
+			(at 386.08 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10864,7 +11016,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 370.84 68.58 0)
+			(at 386.08 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10872,7 +11024,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 370.84 64.77 0)
+			(at 386.08 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10881,7 +11033,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 370.84 64.77 0)
+			(at 386.08 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10890,7 +11042,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 370.84 64.77 0)
+			(at 386.08 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10903,7 +11055,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR09")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -10918,7 +11070,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "106f4761-704b-4327-951f-198a74844f73")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR08"
 			(at 107.95 73.66 0)
 			(effects
 				(font
@@ -10967,7 +11119,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR02")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -10982,7 +11134,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "116c1d36-e042-4014-b3d5-930d2fc69606")
-		(property "Reference" "C62"
+		(property "Reference" "C14"
 			(at 141.732 145.542 0)
 			(effects
 				(font
@@ -11054,7 +11206,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C62")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -11069,7 +11221,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "158f9dee-ec88-45b7-84c9-97fc4e158b08")
-		(property "Reference" "TP9"
+		(property "Reference" "TP4"
 			(at 284.48 42.545 0)
 			(effects
 				(font
@@ -11129,7 +11281,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "TP9")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -11144,7 +11296,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "19a9f085-c687-4b69-b908-17e62f3208c8")
-		(property "Reference" "C54"
+		(property "Reference" "C6"
 			(at 117.602 121.412 0)
 			(effects
 				(font
@@ -11216,7 +11368,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C54")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -11224,7 +11376,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 205.74 35.56 0)
+		(at 193.04 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11232,8 +11384,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a1ab757-51de-4969-8924-8675206b3aa2")
-		(property "Reference" "#PWR0142"
-			(at 205.74 39.37 0)
+		(property "Reference" "#PWR022"
+			(at 193.04 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11242,7 +11394,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 205.74 31.9555 0)
+			(at 193.04 33.2255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11250,7 +11402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 35.56 0)
+			(at 193.04 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11259,7 +11411,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 35.56 0)
+			(at 193.04 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11268,7 +11420,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 35.56 0)
+			(at 193.04 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11281,7 +11433,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0142")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -11380,6 +11532,70 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 306.07 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2b5fb2cf-0cb5-4313-a76d-f46d28a18000")
+		(property "Reference" "#PWR036"
+			(at 306.07 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 306.07 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 306.07 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 306.07 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 306.07 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "da62c928-1948-4980-9684-cf14b8f281a2")
+		)
+		(instances
+			(project "clock_module_v2.0"
+				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:AO3401A")
 		(at 242.57 40.64 90)
 		(unit 1)
@@ -11388,7 +11604,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e7c06c0-a412-4c3a-b490-9aec08573322")
-		(property "Reference" "Q7"
+		(property "Reference" "Q3"
 			(at 240.03 34.925 90)
 			(effects
 				(font
@@ -11463,7 +11679,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "Q7")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -11478,7 +11694,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3158146e-c373-469d-abbf-6758fca17b18")
-		(property "Reference" "#PWR0152"
+		(property "Reference" "#PWR032"
 			(at 281.94 67.31 0)
 			(effects
 				(font
@@ -11527,7 +11743,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0152")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -11542,7 +11758,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3a3b3a4e-dba0-433b-9055-7bc6b062068f")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR07"
 			(at 107.95 45.72 0)
 			(effects
 				(font
@@ -11591,7 +11807,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR04")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -11606,7 +11822,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3a71e4f8-929c-487e-bcb7-5543a8ce30cd")
-		(property "Reference" "#PWR0150"
+		(property "Reference" "#PWR030"
 			(at 266.7 63.5 0)
 			(effects
 				(font
@@ -11655,7 +11871,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0150")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -11746,7 +11962,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b407692-5e8b-4618-bd91-7717729bae50")
-		(property "Reference" "D2"
+		(property "Reference" "D1"
 			(at 147.32 45.085 90)
 			(effects
 				(font
@@ -11816,7 +12032,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -11824,15 +12040,15 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 359.41 43.18 0)
+		(at 374.65 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3c7d8042-6c2f-46c1-9055-49f7242f6908")
-		(property "Reference" "#PWR07"
-			(at 359.41 46.99 0)
+		(property "Reference" "#PWR043"
+			(at 374.65 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11841,7 +12057,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 359.41 39.37 0)
+			(at 374.65 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11849,7 +12065,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 359.41 43.18 0)
+			(at 374.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11858,7 +12074,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 359.41 43.18 0)
+			(at 374.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11867,7 +12083,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 359.41 43.18 0)
+			(at 374.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11880,7 +12096,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR07")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -11896,7 +12112,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3d87a96c-124c-4d24-8b33-7a9c38ed461c")
-		(property "Reference" "R8"
+		(property "Reference" "R19"
 			(at 284.48 47.244 0)
 			(effects
 				(font
@@ -11965,7 +12181,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R8")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -11981,7 +12197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4171771a-aa1a-486c-bd86-020698dc2fe4")
-		(property "Reference" "R53"
+		(property "Reference" "R18"
 			(at 254.635 50.165 0)
 			(effects
 				(font
@@ -12050,7 +12266,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R53")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -12065,7 +12281,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4244b05c-86ca-444d-891c-237cb6d74d4a")
-		(property "Reference" "U8"
+		(property "Reference" "U1"
 			(at 158.75 116.84 0)
 			(effects
 				(font
@@ -12082,7 +12298,7 @@
 				)
 			)
 		)
-		(property "Footprint" "stride_footprints:QFN-56_EP_7x7_Pitch0.4mm"
+		(property "Footprint" "StrideLibrary:QFN-56_EP_7x7_Pitch0.4mm"
 			(at 167.64 200.66 0)
 			(effects
 				(font
@@ -12299,7 +12515,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "U8")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -12307,16 +12523,16 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 106.68 208.28 0)
-		(mirror x)
+		(at 239.395 201.93 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "437d3675-0e25-47a8-9017-5e52ccb2f440")
-		(property "Reference" "D9"
-			(at 103.886 207.518 0)
+		(property "Reference" "D2"
+			(at 242.189 202.692 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12324,7 +12540,7 @@
 			)
 		)
 		(property "Value" "YLW"
-			(at 109.728 209.55 0)
+			(at 236.347 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12332,7 +12548,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 106.68 208.28 90)
+			(at 239.395 201.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12341,7 +12557,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 208.28 90)
+			(at 239.395 201.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12350,7 +12566,7 @@
 			)
 		)
 		(property "Description" "1.8-2.4V Yellow 0603"
-			(at 106.68 208.28 0)
+			(at 239.395 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12359,7 +12575,7 @@
 			)
 		)
 		(property "LCSC PN" "C2296"
-			(at 106.68 208.28 0)
+			(at 239.395 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12368,7 +12584,7 @@
 			)
 		)
 		(property "LCSC Status" "Basic"
-			(at 106.68 208.28 90)
+			(at 239.395 201.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12385,7 +12601,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "D9")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -12400,7 +12616,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "446a51c2-8d8e-4def-a3ce-32c952a01f96")
-		(property "Reference" "R46"
+		(property "Reference" "R2"
 			(at 52.705 36.83 90)
 			(effects
 				(font
@@ -12469,7 +12685,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R46")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -12485,7 +12701,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4490b9bb-370f-4ce8-a4ba-de8a39ba03b4")
-		(property "Reference" "F2"
+		(property "Reference" "F1"
 			(at 58.42 29.21 90)
 			(effects
 				(font
@@ -12555,7 +12771,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "F2")
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -12570,7 +12786,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4656ea6a-8791-49b8-9e29-9ec88f05e600")
-		(property "Reference" "R57"
+		(property "Reference" "R16"
 			(at 239.395 177.8 90)
 			(effects
 				(font
@@ -12639,7 +12855,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R57")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -12647,15 +12863,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:AO3400A")
-		(at 368.3 55.88 0)
+		(at 383.54 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "468222ba-fec4-4b81-a8a7-18e923d36309")
-		(property "Reference" "Q3"
-			(at 373.634 55.245 0)
+		(property "Reference" "Q5"
+			(at 388.874 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12664,7 +12880,7 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 373.634 57.785 0)
+			(at 388.874 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12674,7 +12890,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 373.38 57.785 0)
+			(at 388.62 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12685,7 +12901,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
-			(at 368.3 55.88 0)
+			(at 383.54 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12695,7 +12911,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 368.3 55.88 0)
+			(at 383.54 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12703,7 +12919,7 @@
 			)
 		)
 		(property "LCSC PN" "C20917"
-			(at 368.3 55.88 0)
+			(at 383.54 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12712,7 +12928,7 @@
 			)
 		)
 		(property "LCSC Status" "Basic"
-			(at 368.3 55.88 0)
+			(at 383.54 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12732,7 +12948,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "Q3")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -12740,15 +12956,15 @@
 	)
 	(symbol
 		(lib_id "Power_Protection:SRV05-4")
-		(at 205.74 50.8 0)
+		(at 193.04 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "48c8bfcf-1c00-4ca3-802b-d71b23cd48eb")
-		(property "Reference" "U7"
-			(at 198.12 39.37 0)
+		(property "Reference" "U2"
+			(at 185.42 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12757,7 +12973,7 @@
 			)
 		)
 		(property "Value" "SRV05-4"
-			(at 207.645 62.23 0)
+			(at 194.945 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12766,7 +12982,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 223.52 62.23 0)
+			(at 210.82 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12775,7 +12991,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF"
-			(at 205.74 50.8 0)
+			(at 193.04 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12784,7 +13000,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 50.8 0)
+			(at 193.04 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12792,7 +13008,7 @@
 			)
 		)
 		(property "LCSC PN" "C85364"
-			(at 205.74 50.8 0)
+			(at 193.04 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12801,7 +13017,7 @@
 			)
 		)
 		(property "LCSC Status" "Extended"
-			(at 211.963 63.881 0)
+			(at 199.263 65.151 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12829,7 +13045,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "U7")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -12844,7 +13060,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4946c7fa-370b-450f-a712-0a10ad14f18e")
-		(property "Reference" "#PWR0130"
+		(property "Reference" "#PWR03"
 			(at 33.02 76.2 0)
 			(effects
 				(font
@@ -12893,7 +13109,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0130")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -12908,7 +13124,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "49a8eb8c-6101-466b-b6e2-29b32c6c5683")
-		(property "Reference" "#PWR0149"
+		(property "Reference" "#PWR029"
 			(at 259.715 74.93 0)
 			(effects
 				(font
@@ -12957,7 +13173,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0149")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -12972,7 +13188,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ceacd3c-99b6-4495-9fa0-e60fe9ae9c57")
-		(property "Reference" "R2"
+		(property "Reference" "R5"
 			(at 110.49 62.23 0)
 			(effects
 				(font
@@ -13041,7 +13257,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R2")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -13049,15 +13265,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 318.135 50.165 0)
+		(at 326.39 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "4d70a61d-1af9-4258-a491-00672cec40d5")
-		(property "Reference" "#PWR0157"
-			(at 318.135 56.515 0)
+		(property "Reference" "#PWR039"
+			(at 326.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13066,7 +13282,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 318.135 53.975 0)
+			(at 326.39 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13074,7 +13290,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 318.135 50.165 0)
+			(at 326.39 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13083,7 +13299,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 318.135 50.165 0)
+			(at 326.39 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13092,7 +13308,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 318.135 50.165 0)
+			(at 326.39 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13105,7 +13321,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0157")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -13120,7 +13336,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e1e4056-bdea-443a-a4bc-23adfcd1398a")
-		(property "Reference" "R51"
+		(property "Reference" "R17"
 			(at 245.11 50.165 0)
 			(effects
 				(font
@@ -13189,93 +13405,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 97.79 165.735 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "522a1cb2-833e-449e-9139-f43e50dba8d6")
-		(property "Reference" "SW8"
-			(at 93.345 163.195 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TS-1187A-B-A-B"
-			(at 93.6776 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "stride_footprints:SW_SPST_TL3342_RT"
-			(at 92.71 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 97.79 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC PN" "C318884"
-			(at 97.79 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Status" "Basic"
-			(at 97.79 165.735 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c53db05e-9fbe-456a-b67c-8eb2697a741e")
-		)
-		(pin "2"
-			(uuid "95d992bf-d420-48ba-bc90-a2b8e73503d0")
-		)
-		(instances
-			(project "clock_module_v2.0"
-				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "SW8")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -13290,7 +13420,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5374baf4-4a5f-4ab5-bbe2-b85a163780af")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR011"
 			(at 119.38 73.66 0)
 			(effects
 				(font
@@ -13339,7 +13469,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR01")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -13347,15 +13477,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 335.915 49.53 0)
+		(at 342.9 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "54dbd678-f489-46c9-8edd-a6ed82da6557")
-		(property "Reference" "#PWR0158"
-			(at 335.915 55.88 0)
+		(property "Reference" "#PWR040"
+			(at 342.9 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13364,7 +13494,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 335.915 53.34 0)
+			(at 342.9 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13372,7 +13502,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 335.915 49.53 0)
+			(at 342.9 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13381,7 +13511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 335.915 49.53 0)
+			(at 342.9 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13390,7 +13520,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 335.915 49.53 0)
+			(at 342.9 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13403,95 +13533,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0158")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 335.915 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "590c1e64-bea6-4659-9fa3-7b726d55c0d8")
-		(property "Reference" "C65"
-			(at 338.2391 43.5478 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7u"
-			(at 338.2391 46.3229 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 335.915 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 335.915 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10V X5R"
-			(at 335.915 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC PN" "C23733"
-			(at 335.915 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Status" "Basic"
-			(at 335.915 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "193d43c9-73e2-455d-807f-8a46f0af6beb")
-		)
-		(pin "2"
-			(uuid "bc89266c-caae-4647-be6c-766bb1f8ed30")
-		)
-		(instances
-			(project "clock_module_v2.0"
-				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C65")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -13506,7 +13548,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5d31d136-dfa5-4f1d-b984-a5ffebd84ede")
-		(property "Reference" "#PWR0148"
+		(property "Reference" "#PWR024"
 			(at 196.215 115.57 0)
 			(effects
 				(font
@@ -13555,7 +13597,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0148")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -13570,7 +13612,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5ddd9255-0ce5-4575-99b3-6b3b28b936be")
-		(property "Reference" "J13"
+		(property "Reference" "J1"
 			(at 24.13 26.67 0)
 			(effects
 				(font
@@ -13683,7 +13725,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "J13")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -13698,7 +13740,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5dfec0f4-f1d5-4200-951c-07c14b2eb526")
-		(property "Reference" "#PWR0162"
+		(property "Reference" "#PWR034"
 			(at 302.26 143.51 0)
 			(effects
 				(font
@@ -13747,7 +13789,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0162")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -13762,7 +13804,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f20404c-ec70-48f0-8444-4cfea29276d1")
-		(property "Reference" "C51"
+		(property "Reference" "C3"
 			(at 104.902 121.412 0)
 			(effects
 				(font
@@ -13834,7 +13876,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C51")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -13849,7 +13891,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6033c745-841b-4fba-999f-d9ad2b7f73e8")
-		(property "Reference" "#PWR0136"
+		(property "Reference" "#PWR05"
 			(at 64.77 45.72 0)
 			(effects
 				(font
@@ -13898,7 +13940,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0136")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -13913,7 +13955,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "61058e59-627d-4706-ad40-361cb10c6dc0")
-		(property "Reference" "#PWR0131"
+		(property "Reference" "#PWR06"
 			(at 97.79 178.435 0)
 			(effects
 				(font
@@ -13962,7 +14004,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0131")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -13970,15 +14012,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 101.6 210.185 0)
+		(at 247.015 205.105 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "62317418-30a5-451a-b08a-90deb78f5fd4")
-		(property "Reference" "#PWR0132"
-			(at 101.6 216.535 0)
+		(property "Reference" "#PWR028"
+			(at 247.015 211.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13987,7 +14029,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 101.6 213.995 0)
+			(at 247.015 208.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13995,7 +14037,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 210.185 0)
+			(at 247.015 205.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14004,7 +14046,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 210.185 0)
+			(at 247.015 205.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14013,7 +14055,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 101.6 210.185 0)
+			(at 247.015 205.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14026,7 +14068,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0132")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -14041,7 +14083,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "62ab1f6a-e610-44fc-859f-3da5e20dfc4e")
-		(property "Reference" "#PWR0139"
+		(property "Reference" "#PWR014"
 			(at 140.97 158.75 0)
 			(effects
 				(font
@@ -14090,7 +14132,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0139")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -14105,7 +14147,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6584ad91-bbfe-4967-ac62-cfab9c124e95")
-		(property "Reference" "C59"
+		(property "Reference" "C11"
 			(at 136.652 121.412 0)
 			(effects
 				(font
@@ -14177,7 +14219,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C59")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -14192,7 +14234,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "672c0d58-1174-489c-96ce-c3110651991d")
-		(property "Reference" "R1"
+		(property "Reference" "R4"
 			(at 109.728 45.72 0)
 			(effects
 				(font
@@ -14261,7 +14303,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R1")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -14276,7 +14318,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a4a31c6-8d30-4ca7-8045-fdbffb7b03b8")
-		(property "Reference" "C61"
+		(property "Reference" "C13"
 			(at 135.255 191.77 90)
 			(effects
 				(font
@@ -14348,7 +14390,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C61")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -14363,7 +14405,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6abecc44-48ca-4279-b275-a958545f9f3b")
-		(property "Reference" "R45"
+		(property "Reference" "R1"
 			(at 52.705 34.29 90)
 			(effects
 				(font
@@ -14432,7 +14474,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R45")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -14448,7 +14490,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b40fa69-05c7-48e1-992f-508f06531cad")
-		(property "Reference" "SW9"
+		(property "Reference" "SW3"
 			(at 266.7 64.135 90)
 			(effects
 				(font
@@ -14467,7 +14509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "stride_footprints:SSSS811101"
+		(property "Footprint" "StrideLibrary:SSSS811101"
 			(at 259.715 62.23 0)
 			(effects
 				(font
@@ -14522,7 +14564,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "SW9")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -14538,7 +14580,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b8f825c-74ee-42c4-ba72-6b83861ec357")
-		(property "Reference" "R52"
+		(property "Reference" "R12"
 			(at 193.04 114.3 0)
 			(effects
 				(font
@@ -14607,7 +14649,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R52")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -14622,7 +14664,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f0a60d2-b8c0-4543-8310-e35dab9d0616")
-		(property "Reference" "C53"
+		(property "Reference" "C5"
 			(at 111.887 163.322 0)
 			(effects
 				(font
@@ -14694,7 +14736,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C53")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -14710,7 +14752,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "742f4c56-510e-4d4f-b487-7acdc1dc08ba")
-		(property "Reference" "R5"
+		(property "Reference" "R11"
 			(at 146.05 40.894 0)
 			(effects
 				(font
@@ -14779,7 +14821,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R5")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -14787,7 +14829,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 370.84 36.83 0)
+		(at 386.08 36.83 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14795,8 +14837,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "76901b75-f39e-42f0-8460-fe0f0f9c45b6")
-		(property "Reference" "R10"
-			(at 373.38 37.084 0)
+		(property "Reference" "R24"
+			(at 388.62 37.084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14804,7 +14846,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 374.142 38.862 0)
+			(at 389.382 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14812,7 +14854,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 370.84 36.83 0)
+			(at 386.08 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14821,7 +14863,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 370.84 36.83 0)
+			(at 386.08 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14830,7 +14872,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 370.84 36.83 0)
+			(at 386.08 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14838,7 +14880,7 @@
 			)
 		)
 		(property "LCSC PN" "C25879"
-			(at 370.84 36.83 0)
+			(at 386.08 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14847,7 +14889,7 @@
 			)
 		)
 		(property "LCSC Status" "Basic"
-			(at 370.84 36.83 90)
+			(at 386.08 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14864,7 +14906,95 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R10")
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 306.07 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77423d26-9ee8-49fe-a605-22741816448a")
+		(property "Reference" "C17"
+			(at 308.3941 42.2778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 308.3941 45.0529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 306.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 306.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10V X5R"
+			(at 306.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C23733"
+			(at 306.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Status" "Basic"
+			(at 306.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68673dce-2d56-459e-9b1b-77d067411969")
+		)
+		(pin "2"
+			(uuid "3c7ca320-3b50-4984-8fb9-26dfd96dd535")
+		)
+		(instances
+			(project "clock_module_v2.0"
+				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -14879,7 +15009,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "79ec6b62-2aa7-468f-bd32-d6c1cbf0a841")
-		(property "Reference" "Y4"
+		(property "Reference" "Y1"
 			(at 146.05 186.69 90)
 			(effects
 				(font
@@ -14957,7 +15087,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "Y4")
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -14972,7 +15102,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7c0b0b5d-4e4a-4ab3-930d-74fb4b11d881")
-		(property "Reference" "C60"
+		(property "Reference" "C12"
 			(at 135.255 184.15 90)
 			(effects
 				(font
@@ -15044,7 +15174,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C60")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -15059,7 +15189,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7c264e97-9566-4a3c-868e-3ce4b955f680")
-		(property "Reference" "C50"
+		(property "Reference" "C2"
 			(at 98.552 121.412 0)
 			(effects
 				(font
@@ -15131,7 +15261,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C50")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -15146,7 +15276,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7cdc95cc-c2a2-4f44-bc43-7ffa2d077308")
-		(property "Reference" "D10"
+		(property "Reference" "D3"
 			(at 250.825 41.275 90)
 			(effects
 				(font
@@ -15182,7 +15312,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "ZMM5V6-M TC2030 UART ESP-PROG Interface Shenzhen Allvision Tech N096-2864KSWEG01-H30 SH 2pin 1mm Q&J CR2032-BS-6-1 JK-NSMD300L-12V ftp: Not Exact Clamshell 24 Bottom Contact Surface Mount 0.5mm SMD,P=0.5mm FFC/FPC Connectors ROHS BUZZER MAGNETIC 5V 8.5X8.5MM SMD 6.3V X5R 6.3V X5R 50V C0G 3V3 600mA LDO 32.768kHz 6pF 70kΩ ±20ppm 25V X5R 16V X7R 10V X5R -- mixed values -- 8MB Flash"
+		(property "Description" ""
 			(at 254.381 35.941 0)
 			(effects
 				(font
@@ -15217,7 +15347,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "D10")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -15232,7 +15362,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "7d7492eb-891c-40a7-8be8-136da9a171f5")
-		(property "Reference" "R60"
+		(property "Reference" "R21"
 			(at 286.385 199.39 0)
 			(effects
 				(font
@@ -15295,7 +15425,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R60")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -15311,7 +15441,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7e470261-21d6-45a3-b6a2-445d1d15fedb")
-		(property "Reference" "U10"
+		(property "Reference" "U3"
 			(at 280.67 119.38 0)
 			(effects
 				(font
@@ -15402,7 +15532,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "U10")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -15417,7 +15547,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "845df5c5-41f1-49c2-828a-162017a37952")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR012"
 			(at 132.08 73.66 0)
 			(effects
 				(font
@@ -15466,7 +15596,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR05")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -15481,7 +15611,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "861a1f9f-ac38-4642-bb2a-045c5b397489")
-		(property "Reference" "#PWR0141"
+		(property "Reference" "#PWR016"
 			(at 142.24 134.62 0)
 			(effects
 				(font
@@ -15530,7 +15660,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0141")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -15545,7 +15675,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8cefc895-6085-4934-a3d8-3924920fe845")
-		(property "Reference" "C58"
+		(property "Reference" "C10"
 			(at 135.382 145.542 0)
 			(effects
 				(font
@@ -15617,7 +15747,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C58")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -15625,7 +15755,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 302.895 43.815 0)
+		(at 313.69 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15633,8 +15763,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ffff45b-92d6-4c70-abf2-ab38e31649c0")
-		(property "Reference" "C64"
-			(at 305.2191 42.9128 0)
+		(property "Reference" "C18"
+			(at 316.0141 42.2778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15643,7 +15773,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 305.2191 45.6879 0)
+			(at 316.0141 45.0529 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15652,7 +15782,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 302.895 43.815 0)
+			(at 313.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15661,7 +15791,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 302.895 43.815 0)
+			(at 313.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15670,7 +15800,7 @@
 			)
 		)
 		(property "Description" "10V X5R"
-			(at 302.895 43.815 0)
+			(at 313.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15679,7 +15809,7 @@
 			)
 		)
 		(property "LCSC PN" "C23733"
-			(at 302.895 43.815 0)
+			(at 313.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15688,7 +15818,7 @@
 			)
 		)
 		(property "LCSC Status" "Basic"
-			(at 302.895 43.815 0)
+			(at 313.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15705,7 +15835,94 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C64")
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 342.9 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "907e2fef-0441-446a-8bb4-ecf8f83ab7f2")
+		(property "Reference" "C19"
+			(at 344.17 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 344.17 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 342.9 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 342.9 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6.3V X5R"
+			(at 342.9 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C15525"
+			(at 342.9 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Status" "Basic"
+			(at 342.9 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "681a8fe4-86fa-4967-8a69-26a3dc69f2a0")
+		)
+		(pin "2"
+			(uuid "1fd7a209-0da7-49f1-ae67-b379c6b368b2")
+		)
+		(instances
+			(project "clock_module_v2.0"
+				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -15721,7 +15938,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9507a60d-45cc-49a0-b125-afb9d04ddc32")
-		(property "Reference" "#PWR0147"
+		(property "Reference" "#PWR025"
 			(at 230.505 39.37 0)
 			(effects
 				(font
@@ -15770,7 +15987,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0147")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -15778,15 +15995,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 205.74 64.77 0)
+		(at 193.04 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "973d9e33-7f28-487d-8f33-9356ece23598")
-		(property "Reference" "#PWR0143"
-			(at 205.74 71.12 0)
+		(property "Reference" "#PWR023"
+			(at 193.04 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15795,7 +16012,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 68.58 0)
+			(at 193.04 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15803,7 +16020,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 64.77 0)
+			(at 193.04 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15812,7 +16029,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 64.77 0)
+			(at 193.04 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15821,7 +16038,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 64.77 0)
+			(at 193.04 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15834,7 +16051,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0143")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -15842,7 +16059,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 370.84 45.72 270)
+		(at 386.08 45.72 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15850,8 +16067,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "992c4637-7d97-48d8-a642-9bede8ca94d5")
-		(property "Reference" "D4"
-			(at 374.65 43.815 90)
+		(property "Reference" "D5"
+			(at 389.89 43.815 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15859,7 +16076,7 @@
 			)
 		)
 		(property "Value" "GRN"
-			(at 375.285 45.72 90)
+			(at 390.525 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15867,7 +16084,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 370.84 45.72 90)
+			(at 386.08 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15876,7 +16093,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 370.84 45.72 90)
+			(at 386.08 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15885,7 +16102,7 @@
 			)
 		)
 		(property "Description" "2.6-3.1V 525nm GRN 0805"
-			(at 370.84 45.72 0)
+			(at 386.08 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15894,7 +16111,7 @@
 			)
 		)
 		(property "LCSC PN" "C2297"
-			(at 370.84 45.72 0)
+			(at 386.08 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15903,7 +16120,7 @@
 			)
 		)
 		(property "LCSC Status" "Basic"
-			(at 370.84 45.72 90)
+			(at 386.08 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15920,7 +16137,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "D4")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -15936,7 +16153,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9b9b34bd-ada1-4bd9-ac91-0b26afd7ac58")
-		(property "Reference" "R4"
+		(property "Reference" "R7"
 			(at 134.62 40.894 0)
 			(effects
 				(font
@@ -16005,7 +16222,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R4")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -16020,7 +16237,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f3789d9-db68-4e7a-81fb-c66ab0020bd3")
-		(property "Reference" "#PWR0140"
+		(property "Reference" "#PWR015"
 			(at 142.24 121.92 0)
 			(effects
 				(font
@@ -16069,7 +16286,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0140")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -16084,7 +16301,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9fe92a98-4334-432c-84b7-6088094f0162")
-		(property "Reference" "R56"
+		(property "Reference" "R15"
 			(at 239.395 180.34 90)
 			(effects
 				(font
@@ -16153,7 +16370,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R56")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -16168,7 +16385,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a20fe95d-b3f8-44b4-82a1-c60b0f1767b3")
-		(property "Reference" "#PWR0137"
+		(property "Reference" "#PWR013"
 			(at 132.08 201.93 0)
 			(effects
 				(font
@@ -16217,7 +16434,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0137")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -16232,7 +16449,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a5ce506c-f597-49c1-be5f-e198c10d518a")
-		(property "Reference" "C56"
+		(property "Reference" "C8"
 			(at 129.032 145.542 0)
 			(effects
 				(font
@@ -16304,7 +16521,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C56")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -16312,7 +16529,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 370.84 31.75 0)
+		(at 386.08 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16320,8 +16537,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad31e61b-cab6-4fba-a489-d9e3ba90896e")
-		(property "Reference" "#PWR011"
-			(at 370.84 35.56 0)
+		(property "Reference" "#PWR045"
+			(at 386.08 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16330,7 +16547,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 370.84 28.1455 0)
+			(at 386.08 28.1455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16338,7 +16555,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 370.84 31.75 0)
+			(at 386.08 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16347,7 +16564,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 370.84 31.75 0)
+			(at 386.08 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16356,7 +16573,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 370.84 31.75 0)
+			(at 386.08 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16369,7 +16586,77 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR011")
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:AMS1117-3.3")
+		(at 326.39 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad7e2d1d-9ee8-4991-bca1-b6fb4df3f805")
+		(property "Reference" "U4"
+			(at 322.326 34.798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-3.3"
+			(at 333.756 44.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 326.39 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 328.93 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 326.39 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "26ee8dc3-a471-46ae-9993-a2f0e89001ac")
+		)
+		(pin "1"
+			(uuid "b6dabdad-83f0-4511-bf09-267f5077f24d")
+		)
+		(pin "3"
+			(uuid "4ced1bfe-c380-46ca-9942-6821596bf38c")
+		)
+		(instances
+			(project ""
+				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -16377,15 +16664,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 237.49 121.92 0)
+		(at 240.03 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b6348888-3d0a-49d4-b29e-5eaf4a3ce9b2")
-		(property "Reference" "#PWR0154"
-			(at 237.49 128.27 0)
+		(property "Reference" "#PWR026"
+			(at 240.03 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16394,7 +16681,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 237.49 125.73 0)
+			(at 240.03 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16402,7 +16689,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 121.92 0)
+			(at 240.03 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16411,7 +16698,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 121.92 0)
+			(at 240.03 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16420,7 +16707,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 237.49 121.92 0)
+			(at 240.03 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16433,71 +16720,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0154")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 302.895 48.895 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b8822758-430c-4efd-821e-07c84fc4812e")
-		(property "Reference" "#PWR0156"
-			(at 302.895 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 302.895 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 302.895 48.895 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 302.895 48.895 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 302.895 48.895 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7a6456d2-01a0-4e06-9277-987a4dac2711")
-		)
-		(instances
-			(project "clock_module_v2.0"
-				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0156")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -16513,7 +16736,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be1f2c46-55c1-47ee-b64d-bf9e39d7eef3")
-		(property "Reference" "C66"
+		(property "Reference" "C16"
 			(at 306.959 127 0)
 			(effects
 				(font
@@ -16585,7 +16808,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C66")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -16600,7 +16823,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf8132bb-73d0-4079-8395-8665fc7be09b")
-		(property "Reference" "TP6"
+		(property "Reference" "TP3"
 			(at 125.73 158.75 0)
 			(effects
 				(font
@@ -16660,7 +16883,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "TP6")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -16675,7 +16898,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c40889c9-5f0c-4a97-b4d5-7891c6d5c414")
-		(property "Reference" "R44"
+		(property "Reference" "R3"
 			(at 105.41 157.48 90)
 			(effects
 				(font
@@ -16744,7 +16967,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R44")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -16759,7 +16982,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "c708085a-954e-4fdc-96d4-9eb1f5e5ee49")
-		(property "Reference" "J14"
+		(property "Reference" "J2"
 			(at 284.48 171.45 0)
 			(effects
 				(font
@@ -16831,7 +17054,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "J14")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -16847,7 +17070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c91cd2e5-3f64-48b0-b17b-082753221b18")
-		(property "Reference" "#PWR0135"
+		(property "Reference" "#PWR04"
 			(at 64.77 31.75 0)
 			(effects
 				(font
@@ -16896,7 +17119,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0135")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -16911,7 +17134,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cb7901e1-c4d1-43f7-be2b-bdab592a5b56")
-		(property "Reference" "#PWR0164"
+		(property "Reference" "#PWR038"
 			(at 307.34 186.055 0)
 			(effects
 				(font
@@ -16960,7 +17183,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0164")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -16976,7 +17199,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cccff40a-a582-42dd-be84-181af24eaf73")
-		(property "Reference" "D1"
+		(property "Reference" "D4"
 			(at 285.75 55.245 90)
 			(effects
 				(font
@@ -17046,7 +17269,95 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "D1")
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 351.79 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cdafa303-2b43-4574-8b4b-29e3914d22dc")
+		(property "Reference" "C20"
+			(at 354.1141 42.2778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 354.1141 45.0529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 351.79 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 351.79 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10V X5R"
+			(at 351.79 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C23733"
+			(at 351.79 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Status" "Basic"
+			(at 351.79 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ed83bf9-4e59-4c7f-b500-b41955c3136a")
+		)
+		(pin "2"
+			(uuid "b2a6a333-0f98-4c47-8bcb-a55c5e2a6260")
+		)
+		(instances
+			(project "clock_module_v2.0"
+				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -17146,7 +17457,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 118.745 208.28 90)
+		(at 227.33 201.93 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17154,8 +17465,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cf9e37dd-21a2-424a-ad49-1b755932c913")
-		(property "Reference" "R48"
-			(at 116.205 207.01 90)
+		(property "Reference" "R14"
+			(at 229.87 203.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17163,7 +17474,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 122.555 207.01 90)
+			(at 223.52 203.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17171,7 +17482,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 118.745 208.28 0)
+			(at 227.33 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17180,7 +17491,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.745 208.28 0)
+			(at 227.33 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17189,7 +17500,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 118.745 208.28 0)
+			(at 227.33 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17197,7 +17508,7 @@
 			)
 		)
 		(property "LCSC PN" "C25879"
-			(at 118.745 208.28 0)
+			(at 227.33 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17206,7 +17517,7 @@
 			)
 		)
 		(property "LCSC Status" "Basic"
-			(at 118.745 208.28 90)
+			(at 227.33 201.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17223,7 +17534,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R48")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -17239,7 +17550,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cfefd951-ba90-4758-8d02-043b83b64171")
-		(property "Reference" "Q8"
+		(property "Reference" "Q4"
 			(at 267.335 34.925 90)
 			(effects
 				(font
@@ -17314,7 +17625,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "Q8")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -17322,15 +17633,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 359.41 64.77 0)
+		(at 374.65 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d00f97db-742a-4d80-bd8c-9c0dbc4b42c2")
-		(property "Reference" "#PWR08"
-			(at 359.41 71.12 0)
+		(property "Reference" "#PWR044"
+			(at 374.65 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17339,7 +17650,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 359.41 68.58 0)
+			(at 374.65 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17347,7 +17658,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 359.41 64.77 0)
+			(at 374.65 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17356,7 +17667,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 359.41 64.77 0)
+			(at 374.65 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17365,7 +17676,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 359.41 64.77 0)
+			(at 374.65 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17378,7 +17689,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR08")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -17386,15 +17697,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 359.41 60.96 0)
+		(at 374.65 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d15c9800-7620-4155-b744-e629446a96af")
-		(property "Reference" "R7"
-			(at 361.95 59.69 0)
+		(property "Reference" "R23"
+			(at 377.19 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17402,7 +17713,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 363.22 62.23 0)
+			(at 378.46 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17410,7 +17721,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 359.41 60.96 0)
+			(at 374.65 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17419,7 +17730,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 359.41 60.96 0)
+			(at 374.65 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17428,7 +17739,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 359.41 60.96 0)
+			(at 374.65 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17436,7 +17747,7 @@
 			)
 		)
 		(property "LCSC PN" "C25741"
-			(at 359.41 60.96 0)
+			(at 374.65 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17445,7 +17756,7 @@
 			)
 		)
 		(property "LCSC Status" "Basic"
-			(at 359.41 60.96 0)
+			(at 374.65 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17462,7 +17773,94 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R7")
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 229.87 120.65 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d70f5ec9-139f-4cbc-87d5-29385e4bcd23")
+		(property "Reference" "SW2"
+			(at 233.68 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TS-1187A-B-A-B"
+			(at 229.87 116.5376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
+			(at 229.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C720477"
+			(at 229.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Status" "Basic"
+			(at 229.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4041d254-9512-4616-bcef-f86179297d57")
+		)
+		(pin "2"
+			(uuid "f4929b95-4a66-4bb0-b130-da5cfa7c6df0")
+		)
+		(instances
+			(project "clock_module_v2.0"
+				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -17477,7 +17875,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d99fce39-4e27-4f66-8026-2d34036a19c4")
-		(property "Reference" "C52"
+		(property "Reference" "C4"
 			(at 111.252 121.412 0)
 			(effects
 				(font
@@ -17549,7 +17947,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C52")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -17565,7 +17963,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dafbc4d4-726b-47c7-b074-8d381c5f7477")
-		(property "Reference" "#PWR0151"
+		(property "Reference" "#PWR031"
 			(at 281.94 39.37 0)
 			(effects
 				(font
@@ -17614,7 +18012,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0151")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -17629,7 +18027,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dfb66221-b5c7-44ad-b863-57bd13ce43a4")
-		(property "Reference" "R50"
+		(property "Reference" "R10"
 			(at 136.525 171.45 90)
 			(effects
 				(font
@@ -17698,100 +18096,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R50")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:AP2112K-3.3")
-		(at 318.135 41.275 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e0831baa-0a14-4b66-b2b3-666ee87eeadf")
-		(property "Reference" "U9"
-			(at 314.325 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RT9080-33GJ5"
-			(at 323.215 47.625 0)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 318.135 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2009192305_Richtek-Tech-RT9080-33GJ5_C841192.pdf"
-			(at 318.135 38.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3V3 600mA LDO"
-			(at 318.135 41.275 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC PN" "C841192"
-			(at 318.135 41.275 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Status" "Extended"
-			(at 322.961 49.149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6bb32192-3e1f-4729-86d0-d353c7552710")
-		)
-		(pin "2"
-			(uuid "563a6f35-bf87-4eb6-b56c-d308a4752712")
-		)
-		(pin "3"
-			(uuid "041df64b-d6c2-43e6-88f1-de722f49b72d")
-		)
-		(pin "4"
-			(uuid "9f9b9d2d-0356-425a-ac73-2b540e9742c0")
-		)
-		(pin "5"
-			(uuid "de00e50e-7306-40d1-9803-f69ae9276200")
-		)
-		(instances
-			(project "clock_module_v2.0"
-				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "U9")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -17806,7 +18111,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e0bbd2e6-89d2-4506-bbb7-233796e808c5")
-		(property "Reference" "C49"
+		(property "Reference" "C1"
 			(at 92.71 121.285 0)
 			(effects
 				(font
@@ -17878,7 +18183,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C49")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -17893,7 +18198,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2bc08e3-9774-4310-bb9d-94b123c6f3ab")
-		(property "Reference" "#PWR0129"
+		(property "Reference" "#PWR02"
 			(at 25.4 76.2 0)
 			(effects
 				(font
@@ -17942,7 +18247,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0129")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -17957,7 +18262,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e3247172-37c9-46fd-aee8-1820979690d3")
-		(property "Reference" "#PWR0144"
+		(property "Reference" "#PWR019"
 			(at 154.94 189.23 0)
 			(effects
 				(font
@@ -18006,7 +18311,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0144")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -18014,15 +18319,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 359.41 49.53 0)
+		(at 374.65 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e32d7b46-ca9d-49b3-a56d-9a0152989aff")
-		(property "Reference" "R6"
-			(at 361.188 46.99 0)
+		(property "Reference" "R22"
+			(at 376.428 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18030,7 +18335,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 361.188 51.816 0)
+			(at 376.428 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18038,7 +18343,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 359.41 49.53 0)
+			(at 374.65 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18047,7 +18352,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 359.41 49.53 0)
+			(at 374.65 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18056,7 +18361,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 359.41 49.53 0)
+			(at 374.65 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18064,7 +18369,7 @@
 			)
 		)
 		(property "LCSC PN" "C11702"
-			(at 359.41 49.53 0)
+			(at 374.65 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18073,7 +18378,7 @@
 			)
 		)
 		(property "LCSC Status" "Basic"
-			(at 359.41 49.53 90)
+			(at 374.65 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18090,7 +18395,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R6")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -18105,7 +18410,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5833542-9d52-4f80-a86d-e740d7474e1c")
-		(property "Reference" "#PWR0146"
+		(property "Reference" "#PWR021"
 			(at 152.4 219.71 0)
 			(effects
 				(font
@@ -18154,7 +18459,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0146")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -18170,7 +18475,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e6e244a1-7bb6-469f-bd3a-38a6aaf537a3")
-		(property "Reference" "#PWR0133"
+		(property "Reference" "#PWR09"
 			(at 111.125 151.765 0)
 			(effects
 				(font
@@ -18219,7 +18524,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0133")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -18234,7 +18539,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e7e6f3c8-1409-434d-abc6-390a5ad8c3c8")
-		(property "Reference" "R49"
+		(property "Reference" "R9"
 			(at 136.525 168.91 90)
 			(effects
 				(font
@@ -18303,94 +18608,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 227.965 120.65 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ec1caaa5-da98-4bfd-82b7-9e24ef80f63e")
-		(property "Reference" "SW10"
-			(at 231.775 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TS-1187A-B-A-B"
-			(at 227.965 116.5376 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "stride_footprints:SW_SPST_TL3342_RT"
-			(at 227.965 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 227.965 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 227.965 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC PN" "C318884"
-			(at 227.965 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Status" "Basic"
-			(at 227.965 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9524979-ba5d-4395-8940-1dcad095bfa8")
-		)
-		(pin "2"
-			(uuid "f579f8a1-838b-440f-85a3-c151d5a379dd")
-		)
-		(instances
-			(project "clock_module_v2.0"
-				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "SW10")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -18406,7 +18624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee0834b1-c987-4a60-b994-8fe55468a2a5")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR017"
 			(at 143.51 38.1 0)
 			(effects
 				(font
@@ -18455,7 +18673,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR03")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -18470,7 +18688,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f1276286-ec1a-405a-9524-6214f9b56fbc")
-		(property "Reference" "C55"
+		(property "Reference" "C7"
 			(at 123.952 121.412 0)
 			(effects
 				(font
@@ -18542,7 +18760,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C55")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -18557,7 +18775,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "f4497006-b57d-453b-9271-35fd36a9bfd7")
-		(property "Reference" "R59"
+		(property "Reference" "R20"
 			(at 286.385 193.04 0)
 			(effects
 				(font
@@ -18620,7 +18838,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R59")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -18628,15 +18846,15 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 346.71 34.925 0)
+		(at 356.87 33.655 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "f4b00c54-9ad1-49cc-a893-af751b7bbde3")
-		(property "Reference" "#PWR0159"
-			(at 346.71 38.735 0)
+		(property "Reference" "#PWR042"
+			(at 356.87 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18645,7 +18863,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 346.71 31.115 0)
+			(at 356.87 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18653,7 +18871,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 346.71 34.925 0)
+			(at 356.87 33.655 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18662,7 +18880,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 346.71 34.925 0)
+			(at 356.87 33.655 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18671,7 +18889,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 346.71 34.925 0)
+			(at 356.87 33.655 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18684,7 +18902,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0159")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -18699,7 +18917,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f704d10e-8655-4a5a-b5e0-edb0e6e5d8f1")
-		(property "Reference" "R54"
+		(property "Reference" "R13"
 			(at 207.01 119.38 90)
 			(effects
 				(font
@@ -18768,7 +18986,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "R54")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -18783,7 +19001,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f8a6cc45-296a-490d-a13d-0d0765d3ac60")
-		(property "Reference" "C63"
+		(property "Reference" "C15"
 			(at 143.002 121.412 0)
 			(effects
 				(font
@@ -18855,7 +19073,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "C63")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -18863,7 +19081,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 302.895 34.925 0)
+		(at 306.07 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18871,8 +19089,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe596695-6d84-40dd-b76e-1fcf5d239d38")
-		(property "Reference" "#PWR0155"
-			(at 302.895 38.735 0)
+		(property "Reference" "#PWR035"
+			(at 306.07 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18881,7 +19099,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 302.895 31.3205 0)
+			(at 306.07 30.6855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18889,7 +19107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 302.895 34.925 0)
+			(at 306.07 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18898,7 +19116,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 302.895 34.925 0)
+			(at 306.07 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18907,7 +19125,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 302.895 34.925 0)
+			(at 306.07 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18920,7 +19138,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "#PWR0155")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -18928,15 +19146,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 349.25 41.91 0)
+		(at 359.41 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ff655976-5b9a-4df3-b248-ec9d8c8caf5e")
-		(property "Reference" "TP10"
-			(at 349.885 41.91 0)
+		(property "Reference" "TP5"
+			(at 360.045 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18945,7 +19163,7 @@
 			)
 		)
 		(property "Value" "3V3"
-			(at 350.393 43.7766 0)
+			(at 360.553 39.9666 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18955,7 +19173,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 354.33 41.91 0)
+			(at 364.49 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18964,7 +19182,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 354.33 41.91 0)
+			(at 364.49 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18973,7 +19191,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 349.25 41.91 0)
+			(at 359.41 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18981,7 +19199,7 @@
 			)
 		)
 		(property "LCSC PN" ""
-			(at 349.25 41.91 0)
+			(at 359.41 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18995,7 +19213,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0/78ee0fac-ebd1-406d-9877-0ec108b7a976"
-					(reference "TP10")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
