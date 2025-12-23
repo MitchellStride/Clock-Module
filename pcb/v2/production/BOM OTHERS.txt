@@ -1,0 +1,8 @@
+Extras to Order not on PCB BOM:
+- C5248005 FFC and assorted, reverse too
+- C125626 GL5516 LDR
+- OLED 
+Wisevision N096-2864KSWEG01-H30
+LCSC PN: C2890596
+Controller  	SSD1306
+- CR2032 Battery

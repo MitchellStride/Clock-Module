@@ -549,7 +549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "stride_footprints:JLC_Tooling_Hole"
+		(property "Footprint" "MountingHole:ToolingHole_1.152mm"
 			(at 317.5 231.14 0)
 			(effects
 				(font
@@ -576,6 +576,15 @@
 			)
 		)
 		(property "LCSC PN" ""
+			(at 317.5 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor_PN" ""
 			(at 317.5 231.14 0)
 			(effects
 				(font
@@ -595,16 +604,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 358.14 235.585 0)
+		(at 356.87 231.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "25fc7484-491e-43e0-bd7c-d028fb2ba319")
-		(property "Reference" "H7"
-			(at 360.68 236.064 0)
+		(uuid "2e95e753-e3ff-4d79-a7f2-5171b7f6a7c7")
+		(property "Reference" "H4"
+			(at 359.41 231.775 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -613,7 +621,7 @@
 			)
 		)
 		(property "Value" "Mounting_Hole"
-			(at 360.68 237.4516 0)
+			(at 359.41 233.0066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -622,8 +630,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 358.14 235.585 0)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad_TopBottom"
+			(at 356.87 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -632,7 +640,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 358.14 235.585 0)
+			(at 356.87 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -641,7 +649,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 358.14 235.585 0)
+			(at 356.87 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -649,7 +657,16 @@
 			)
 		)
 		(property "LCSC PN" ""
-			(at 358.14 235.585 0)
+			(at 356.87 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor_PN" ""
+			(at 356.87 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -660,7 +677,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H7")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -735,6 +752,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor_PN" ""
+			(at 376.555 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d97d7bfc-1fd0-4e94-ae98-9af066c8b9fb")
 		)
@@ -749,15 +775,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 349.885 231.14 0)
+		(at 326.39 231.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "5d3b4c1e-95f0-402b-87d3-ef21132bc00d")
-		(property "Reference" "H4"
-			(at 352.425 231.775 0)
+		(fields_autoplaced yes)
+		(uuid "552772f0-441e-414d-b6d0-f4b100622b00")
+		(property "Reference" "H2"
+			(at 328.93 230.2315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -765,8 +792,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Mounting_Hole"
-			(at 352.425 233.0066 0)
+		(property "Value" "Tooling_Hole_JLC"
+			(at 328.93 233.0066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -775,8 +802,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 349.885 231.14 0)
+		(property "Footprint" "MountingHole:ToolingHole_1.152mm"
+			(at 326.39 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -785,7 +812,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 349.885 231.14 0)
+			(at 326.39 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -794,7 +821,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 349.885 231.14 0)
+			(at 326.39 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -802,7 +829,16 @@
 			)
 		)
 		(property "LCSC PN" ""
-			(at 349.885 231.14 0)
+			(at 326.39 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor_PN" ""
+			(at 326.39 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -813,7 +849,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H4")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -821,16 +857,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 358.14 231.14 0)
+		(at 349.25 231.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5dc139cf-0dab-4548-b293-89093d22db7d")
-		(property "Reference" "H6"
-			(at 360.68 231.619 0)
+		(uuid "5d3b4c1e-95f0-402b-87d3-ef21132bc00d")
+		(property "Reference" "H3"
+			(at 351.79 231.775 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -839,7 +874,7 @@
 			)
 		)
 		(property "Value" "Mounting_Hole"
-			(at 360.68 233.0066 0)
+			(at 351.79 233.0066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -848,8 +883,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 358.14 231.14 0)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad_TopBottom"
+			(at 349.25 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -858,7 +893,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 358.14 231.14 0)
+			(at 349.25 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -867,7 +902,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 358.14 231.14 0)
+			(at 349.25 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -875,7 +910,16 @@
 			)
 		)
 		(property "LCSC PN" ""
-			(at 358.14 231.14 0)
+			(at 349.25 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor_PN" ""
+			(at 349.25 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -886,7 +930,7 @@
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H6")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -956,6 +1000,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor_PN" ""
+			(at 336.55 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
@@ -967,16 +1020,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 349.885 235.585 0)
+		(at 349.25 236.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ea15db2-aef0-44bf-be20-a7cd93ef8830")
-		(property "Reference" "H5"
-			(at 352.425 236.064 0)
+		(uuid "93bac8fa-7e84-49cd-b21f-01e9059c3933")
+		(property "Reference" "H6"
+			(at 351.79 236.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -985,7 +1037,7 @@
 			)
 		)
 		(property "Value" "Mounting_Hole"
-			(at 352.425 237.4516 0)
+			(at 351.79 238.0866 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -994,8 +1046,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 349.885 235.585 0)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad_TopBottom"
+			(at 349.25 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1004,7 +1056,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 349.885 235.585 0)
+			(at 349.25 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1013,7 +1065,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 349.885 235.585 0)
+			(at 349.25 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1021,7 +1073,98 @@
 			)
 		)
 		(property "LCSC PN" ""
-			(at 349.885 235.585 0)
+			(at 349.25 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor_PN" ""
+			(at 349.25 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "clock_module_v2.0"
+				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 317.5 236.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9eb9fc2b-79d1-431b-aa55-43492194e9fe")
+		(property "Reference" "H5"
+			(at 320.04 235.3115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Tooling_Hole_JLC"
+			(at 320.04 238.0866 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:ToolingHole_1.152mm"
+			(at 317.5 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.5 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 317.5 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" ""
+			(at 317.5 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor_PN" ""
+			(at 317.5 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1033,152 +1176,6 @@
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
 					(reference "H5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 325.12 231.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a01221dc-2da8-4880-b0f8-73a2a9f7cbb6")
-		(property "Reference" "H3"
-			(at 327.66 230.2315 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Tooling_Hole_JLC"
-			(at 327.66 233.0066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "stride_footprints:JLC_Tooling_Hole"
-			(at 325.12 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 325.12 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 325.12 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC PN" ""
-			(at 325.12 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "clock_module_v2.0"
-				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 317.5 235.585 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9d127b6-157b-4bab-9416-cc3fa48eb8b2")
-		(property "Reference" "H2"
-			(at 320.04 234.6765 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Tooling_Hole_JLC"
-			(at 320.04 237.4516 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "stride_footprints:JLC_Tooling_Hole"
-			(at 317.5 235.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 317.5 235.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 317.5 235.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC PN" ""
-			(at 317.5 235.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "clock_module_v2.0"
-				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
-					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -1240,6 +1237,15 @@
 			)
 		)
 		(property "LCSC PN" ""
+			(at 336.55 235.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor_PN" ""
 			(at 336.55 235.585 0)
 			(effects
 				(font
@@ -1316,6 +1322,87 @@
 			(project "clock_module_v2.0"
 				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 356.87 236.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8263b50-6dbe-4e5b-a4e8-a2717ee0d081")
+		(property "Reference" "H7"
+			(at 359.41 236.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting_Hole"
+			(at 359.41 238.0866 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad_TopBottom"
+			(at 356.87 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 356.87 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 356.87 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" ""
+			(at 356.87 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor_PN" ""
+			(at 356.87 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "clock_module_v2.0"
+				(path "/e9b4505e-6f30-405f-a63f-0ff05fc75bc0"
+					(reference "H7")
 					(unit 1)
 				)
 			)

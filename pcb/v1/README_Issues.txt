@@ -43,8 +43,11 @@ USBC
 RP2040
 J3 FFC and 1.25 expensive 
 
-#v2 notes
+#V2 notes
 look at impedance control for free?
+Make mtg holes plated?
+Make 
 
 Gerber Review
 Verify holes on SSSS811101
+Silk on 

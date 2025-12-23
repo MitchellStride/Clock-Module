@@ -1,0 +1,13 @@
+#To Do V2
+re-add all footprints
+Look at rules setup really good again Board and net classes
+	online JLC rules txt
+Check impedance 7268 glass stackup? 
+add net class to power in sch
+Silk on WS2812
+Move OLED to seperate PCB, Just asm FFC and caps and solder pads
+	using same side FFC I need to invert the pins, so flip conn pin 1
+	add second ffc conn to this pcb.
+
+Gerber Review
+Verify holes on SSSS811101
